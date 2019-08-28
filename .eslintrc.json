@@ -23,6 +23,12 @@
         "allowTypedFunctionExpressions": true
       }
     ],
+    "@typescript-eslint/no-use-before-define": [
+      "off",
+      {
+        "functions": false
+      }
+    ],
     "no-var": "error",
     "prefer-arrow-callback": "error",
     "prefer-const": "error"

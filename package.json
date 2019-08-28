@@ -1,5 +1,5 @@
 {
-  "name": "snyk-cocoapods-plugin",
+  "name": "@snyk/snyk-cocoapods-plugin",
   "description": "Snyk CLI CocoaPods plugin",
   "main": "dist/index.js",
   "scripts": {
@@ -33,6 +33,9 @@
   ],
   "homepage": "https://github.com/snyk/snyk-cocoapods-plugin#readme",
   "dependencies": {
+    "@snyk/cli-interface": "^1.5.0",
+    "@snyk/cocoapods-lockfile-parser": "^1.0.1",
+    "@snyk/dep-graph": "^1.10.1",
     "source-map-support": "^0.5.7",
     "tslib": "^1.9.3"
   },

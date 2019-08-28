@@ -1,0 +1,9 @@
+install! 'cocoapods', :integrate_targets => false
+
+platform :ios, '12.4'
+
+project '../../exampleProject/Example.xcodeproj'
+
+target 'Example' do
+  pod 'AFNetworking'
+end

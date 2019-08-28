@@ -1,0 +1,3571 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`inspect(rootDir, targetFile?, options?) with a targetFile argument works with the simple fixture 1`] = `
+Object {
+  "package": Object {
+    "dependencies": Object {
+      "Reachability": Object {
+        "labels": Object {
+          "checksum": "3c8fe9643e52184d17f207e781cd84158da8c02b",
+          "repository": "trunk",
+        },
+        "name": "Reachability",
+        "version": "3.1.0",
+      },
+    },
+    "name": "simple",
+    "packageFormatVersion": "cocoapods:0.0.1",
+    "type": "CocoaPods",
+    "version": "0.0.0",
+  },
+  "plugin": Object {
+    "meta": Object {},
+    "name": "cocoapods",
+    "runtime": "1.7.5",
+    "targetFile": "/Users/marius/Development/Snyk/snyk-cocoapods-plugin/test/fixtures/simple/Podfile.lock",
+  },
+}
+`;
+
+exports[`inspect(rootDir, targetFile?, options?) without targetFile argument works with the eigen fixture 1`] = `
+Object {
+  "package": Object {
+    "dependencies": Object {
+      "AFNetworkActivityLogger": Object {
+        "dependencies": Object {
+          "AFNetworking/NSURLConnection": Object {
+            "dependencies": Object {
+              "AFNetworking/Reachability": Object {
+                "labels": Object {
+                  "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+                  "repository": "https://github.com/cocoapods/specs.git",
+                },
+                "name": "AFNetworking/Reachability",
+                "version": "2.5.4",
+              },
+              "AFNetworking/Security": Object {
+                "labels": Object {
+                  "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+                  "repository": "https://github.com/cocoapods/specs.git",
+                },
+                "name": "AFNetworking/Security",
+                "version": "2.5.4",
+              },
+              "AFNetworking/Serialization": Object {
+                "labels": Object {
+                  "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+                  "repository": "https://github.com/cocoapods/specs.git",
+                },
+                "name": "AFNetworking/Serialization",
+                "version": "2.5.4",
+              },
+            },
+            "labels": Object {
+              "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+              "repository": "https://github.com/cocoapods/specs.git",
+            },
+            "name": "AFNetworking/NSURLConnection",
+            "version": "2.5.4",
+          },
+          "AFNetworking/NSURLSession": Object {
+            "dependencies": Object {
+              "AFNetworking/Reachability": Object {
+                "labels": Object {
+                  "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+                  "repository": "https://github.com/cocoapods/specs.git",
+                },
+                "name": "AFNetworking/Reachability",
+                "version": "2.5.4",
+              },
+              "AFNetworking/Security": Object {
+                "labels": Object {
+                  "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+                  "repository": "https://github.com/cocoapods/specs.git",
+                },
+                "name": "AFNetworking/Security",
+                "version": "2.5.4",
+              },
+              "AFNetworking/Serialization": Object {
+                "labels": Object {
+                  "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+                  "repository": "https://github.com/cocoapods/specs.git",
+                },
+                "name": "AFNetworking/Serialization",
+                "version": "2.5.4",
+              },
+            },
+            "labels": Object {
+              "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+              "repository": "https://github.com/cocoapods/specs.git",
+            },
+            "name": "AFNetworking/NSURLSession",
+            "version": "2.5.4",
+          },
+        },
+        "labels": Object {
+          "checksum": "121486778117d53b3ab1c61d264b88081d0c3eee",
+          "repository": "https://github.com/cocoapods/specs.git",
+        },
+        "name": "AFNetworkActivityLogger",
+        "version": "2.0.4",
+      },
+      "AFNetworking": Object {
+        "dependencies": Object {
+          "AFNetworking/NSURLConnection": Object {
+            "dependencies": Object {
+              "AFNetworking/Reachability": Object {
+                "labels": Object {
+                  "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+                  "repository": "https://github.com/cocoapods/specs.git",
+                },
+                "name": "AFNetworking/Reachability",
+                "version": "2.5.4",
+              },
+              "AFNetworking/Security": Object {
+                "labels": Object {
+                  "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+                  "repository": "https://github.com/cocoapods/specs.git",
+                },
+                "name": "AFNetworking/Security",
+                "version": "2.5.4",
+              },
+              "AFNetworking/Serialization": Object {
+                "labels": Object {
+                  "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+                  "repository": "https://github.com/cocoapods/specs.git",
+                },
+                "name": "AFNetworking/Serialization",
+                "version": "2.5.4",
+              },
+            },
+            "labels": Object {
+              "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+              "repository": "https://github.com/cocoapods/specs.git",
+            },
+            "name": "AFNetworking/NSURLConnection",
+            "version": "2.5.4",
+          },
+          "AFNetworking/NSURLSession": Object {
+            "dependencies": Object {
+              "AFNetworking/Reachability": Object {
+                "labels": Object {
+                  "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+                  "repository": "https://github.com/cocoapods/specs.git",
+                },
+                "name": "AFNetworking/Reachability",
+                "version": "2.5.4",
+              },
+              "AFNetworking/Security": Object {
+                "labels": Object {
+                  "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+                  "repository": "https://github.com/cocoapods/specs.git",
+                },
+                "name": "AFNetworking/Security",
+                "version": "2.5.4",
+              },
+              "AFNetworking/Serialization": Object {
+                "labels": Object {
+                  "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+                  "repository": "https://github.com/cocoapods/specs.git",
+                },
+                "name": "AFNetworking/Serialization",
+                "version": "2.5.4",
+              },
+            },
+            "labels": Object {
+              "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+              "repository": "https://github.com/cocoapods/specs.git",
+            },
+            "name": "AFNetworking/NSURLSession",
+            "version": "2.5.4",
+          },
+          "AFNetworking/Reachability": Object {
+            "labels": Object {
+              "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+              "repository": "https://github.com/cocoapods/specs.git",
+            },
+            "name": "AFNetworking/Reachability",
+            "version": "2.5.4",
+          },
+          "AFNetworking/Security": Object {
+            "labels": Object {
+              "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+              "repository": "https://github.com/cocoapods/specs.git",
+            },
+            "name": "AFNetworking/Security",
+            "version": "2.5.4",
+          },
+          "AFNetworking/Serialization": Object {
+            "labels": Object {
+              "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+              "repository": "https://github.com/cocoapods/specs.git",
+            },
+            "name": "AFNetworking/Serialization",
+            "version": "2.5.4",
+          },
+          "AFNetworking/UIKit": Object {
+            "dependencies": Object {
+              "AFNetworking/NSURLConnection": Object {
+                "dependencies": Object {
+                  "AFNetworking/Reachability": Object {
+                    "labels": Object {
+                      "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+                      "repository": "https://github.com/cocoapods/specs.git",
+                    },
+                    "name": "AFNetworking/Reachability",
+                    "version": "2.5.4",
+                  },
+                  "AFNetworking/Security": Object {
+                    "labels": Object {
+                      "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+                      "repository": "https://github.com/cocoapods/specs.git",
+                    },
+                    "name": "AFNetworking/Security",
+                    "version": "2.5.4",
+                  },
+                  "AFNetworking/Serialization": Object {
+                    "labels": Object {
+                      "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+                      "repository": "https://github.com/cocoapods/specs.git",
+                    },
+                    "name": "AFNetworking/Serialization",
+                    "version": "2.5.4",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+                  "repository": "https://github.com/cocoapods/specs.git",
+                },
+                "name": "AFNetworking/NSURLConnection",
+                "version": "2.5.4",
+              },
+              "AFNetworking/NSURLSession": Object {
+                "dependencies": Object {
+                  "AFNetworking/Reachability": Object {
+                    "labels": Object {
+                      "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+                      "repository": "https://github.com/cocoapods/specs.git",
+                    },
+                    "name": "AFNetworking/Reachability",
+                    "version": "2.5.4",
+                  },
+                  "AFNetworking/Security": Object {
+                    "labels": Object {
+                      "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+                      "repository": "https://github.com/cocoapods/specs.git",
+                    },
+                    "name": "AFNetworking/Security",
+                    "version": "2.5.4",
+                  },
+                  "AFNetworking/Serialization": Object {
+                    "labels": Object {
+                      "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+                      "repository": "https://github.com/cocoapods/specs.git",
+                    },
+                    "name": "AFNetworking/Serialization",
+                    "version": "2.5.4",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+                  "repository": "https://github.com/cocoapods/specs.git",
+                },
+                "name": "AFNetworking/NSURLSession",
+                "version": "2.5.4",
+              },
+            },
+            "labels": Object {
+              "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+              "repository": "https://github.com/cocoapods/specs.git",
+            },
+            "name": "AFNetworking/UIKit",
+            "version": "2.5.4",
+          },
+        },
+        "labels": Object {
+          "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+          "repository": "https://github.com/cocoapods/specs.git",
+        },
+        "name": "AFNetworking",
+        "version": "2.5.4",
+      },
+      "AFOAuth1Client": Object {
+        "dependencies": Object {
+          "AFNetworking": Object {
+            "dependencies": Object {
+              "AFNetworking/NSURLConnection": Object {
+                "dependencies": Object {
+                  "AFNetworking/Reachability": Object {
+                    "labels": Object {
+                      "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+                      "repository": "https://github.com/cocoapods/specs.git",
+                    },
+                    "name": "AFNetworking/Reachability",
+                    "version": "2.5.4",
+                  },
+                  "AFNetworking/Security": Object {
+                    "labels": Object {
+                      "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+                      "repository": "https://github.com/cocoapods/specs.git",
+                    },
+                    "name": "AFNetworking/Security",
+                    "version": "2.5.4",
+                  },
+                  "AFNetworking/Serialization": Object {
+                    "labels": Object {
+                      "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+                      "repository": "https://github.com/cocoapods/specs.git",
+                    },
+                    "name": "AFNetworking/Serialization",
+                    "version": "2.5.4",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+                  "repository": "https://github.com/cocoapods/specs.git",
+                },
+                "name": "AFNetworking/NSURLConnection",
+                "version": "2.5.4",
+              },
+              "AFNetworking/NSURLSession": Object {
+                "dependencies": Object {
+                  "AFNetworking/Reachability": Object {
+                    "labels": Object {
+                      "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+                      "repository": "https://github.com/cocoapods/specs.git",
+                    },
+                    "name": "AFNetworking/Reachability",
+                    "version": "2.5.4",
+                  },
+                  "AFNetworking/Security": Object {
+                    "labels": Object {
+                      "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+                      "repository": "https://github.com/cocoapods/specs.git",
+                    },
+                    "name": "AFNetworking/Security",
+                    "version": "2.5.4",
+                  },
+                  "AFNetworking/Serialization": Object {
+                    "labels": Object {
+                      "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+                      "repository": "https://github.com/cocoapods/specs.git",
+                    },
+                    "name": "AFNetworking/Serialization",
+                    "version": "2.5.4",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+                  "repository": "https://github.com/cocoapods/specs.git",
+                },
+                "name": "AFNetworking/NSURLSession",
+                "version": "2.5.4",
+              },
+              "AFNetworking/Reachability": Object {
+                "labels": Object {
+                  "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+                  "repository": "https://github.com/cocoapods/specs.git",
+                },
+                "name": "AFNetworking/Reachability",
+                "version": "2.5.4",
+              },
+              "AFNetworking/Security": Object {
+                "labels": Object {
+                  "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+                  "repository": "https://github.com/cocoapods/specs.git",
+                },
+                "name": "AFNetworking/Security",
+                "version": "2.5.4",
+              },
+              "AFNetworking/Serialization": Object {
+                "labels": Object {
+                  "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+                  "repository": "https://github.com/cocoapods/specs.git",
+                },
+                "name": "AFNetworking/Serialization",
+                "version": "2.5.4",
+              },
+              "AFNetworking/UIKit": Object {
+                "dependencies": Object {
+                  "AFNetworking/NSURLConnection": Object {
+                    "dependencies": Object {
+                      "AFNetworking/Reachability": Object {
+                        "labels": Object {
+                          "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+                          "repository": "https://github.com/cocoapods/specs.git",
+                        },
+                        "name": "AFNetworking/Reachability",
+                        "version": "2.5.4",
+                      },
+                      "AFNetworking/Security": Object {
+                        "labels": Object {
+                          "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+                          "repository": "https://github.com/cocoapods/specs.git",
+                        },
+                        "name": "AFNetworking/Security",
+                        "version": "2.5.4",
+                      },
+                      "AFNetworking/Serialization": Object {
+                        "labels": Object {
+                          "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+                          "repository": "https://github.com/cocoapods/specs.git",
+                        },
+                        "name": "AFNetworking/Serialization",
+                        "version": "2.5.4",
+                      },
+                    },
+                    "labels": Object {
+                      "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+                      "repository": "https://github.com/cocoapods/specs.git",
+                    },
+                    "name": "AFNetworking/NSURLConnection",
+                    "version": "2.5.4",
+                  },
+                  "AFNetworking/NSURLSession": Object {
+                    "dependencies": Object {
+                      "AFNetworking/Reachability": Object {
+                        "labels": Object {
+                          "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+                          "repository": "https://github.com/cocoapods/specs.git",
+                        },
+                        "name": "AFNetworking/Reachability",
+                        "version": "2.5.4",
+                      },
+                      "AFNetworking/Security": Object {
+                        "labels": Object {
+                          "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+                          "repository": "https://github.com/cocoapods/specs.git",
+                        },
+                        "name": "AFNetworking/Security",
+                        "version": "2.5.4",
+                      },
+                      "AFNetworking/Serialization": Object {
+                        "labels": Object {
+                          "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+                          "repository": "https://github.com/cocoapods/specs.git",
+                        },
+                        "name": "AFNetworking/Serialization",
+                        "version": "2.5.4",
+                      },
+                    },
+                    "labels": Object {
+                      "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+                      "repository": "https://github.com/cocoapods/specs.git",
+                    },
+                    "name": "AFNetworking/NSURLSession",
+                    "version": "2.5.4",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+                  "repository": "https://github.com/cocoapods/specs.git",
+                },
+                "name": "AFNetworking/UIKit",
+                "version": "2.5.4",
+              },
+            },
+            "labels": Object {
+              "checksum": "05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e",
+              "repository": "https://github.com/cocoapods/specs.git",
+            },
+            "name": "AFNetworking",
+            "version": "2.5.4",
+          },
+        },
+        "labels": Object {
+          "checkoutOptionsGit": "https://github.com/lxcid/AFOAuth1Client.git",
+          "checkoutOptionsTag": "0.4.0",
+          "checksum": "07ccc935ba06ac8d023c16d39a5bdf04bc6f92e1",
+          "externalSourceGit": "https://github.com/lxcid/AFOAuth1Client.git",
+          "externalSourceTag": "0.4.0",
+        },
+        "name": "AFOAuth1Client",
+        "version": "0.4.0",
+      },
+      "ARAnalytics/Adjust": Object {
+        "dependencies": Object {
+          "ARAnalytics/CoreIOS": Object {
+            "labels": Object {
+              "checksum": "896e530551168721fbb8852e044b8afb9baffdde",
+              "repository": "https://github.com/cocoapods/specs.git",
+            },
+            "name": "ARAnalytics/CoreIOS",
+            "version": "5.0.1",
+          },
+          "Adjust": Object {
+            "dependencies": Object {
+              "Adjust/Core": Object {
+                "labels": Object {
+                  "checksum": "b1f2b0e0b426fa991d69ed7fc9de806cf6dff5a6",
+                  "repository": "https://github.com/cocoapods/specs.git",
+                },
+                "name": "Adjust/Core",
+                "version": "4.17.1",
+              },
+            },
+            "labels": Object {
+              "checksum": "b1f2b0e0b426fa991d69ed7fc9de806cf6dff5a6",
+              "repository": "https://github.com/cocoapods/specs.git",
+            },
+            "name": "Adjust",
+            "version": "4.17.1",
+          },
+        },
+        "labels": Object {
+          "checksum": "896e530551168721fbb8852e044b8afb9baffdde",
+          "repository": "https://github.com/cocoapods/specs.git",
+        },
+        "name": "ARAnalytics/Adjust",
+        "version": "5.0.1",
+      },
+      "ARAnalytics/DSL": Object {
+        "dependencies": Object {
+          "RSSwizzle": Object {
+            "labels": Object {
+              "checksum": "d561958f595028bfcef98c7d55c318b3878a61c6",
+              "repository": "https://github.com/cocoapods/specs.git",
+            },
+            "name": "RSSwizzle",
+            "version": "0.1.0",
+          },
+          "ReactiveObjC": Object {
+            "labels": Object {
+              "checksum": "7b6782ae39f9ac0f57205c3b0c0b69b9dd7048c0",
+              "repository": "https://github.com/cocoapods/specs.git",
+            },
+            "name": "ReactiveObjC",
+            "version": "2.1.2",
+          },
+        },
+        "labels": Object {
+          "checksum": "896e530551168721fbb8852e044b8afb9baffdde",
+          "repository": "https://github.com/cocoapods/specs.git",
+        },
+        "name": "ARAnalytics/DSL",
+        "version": "5.0.1",
+      },
+      "ARAnalytics/Segmentio": Object {
+        "dependencies": Object {
+          "ARAnalytics/CoreIOS": Object {
+            "labels": Object {
+              "checksum": "896e530551168721fbb8852e044b8afb9baffdde",
+              "repository": "https://github.com/cocoapods/specs.git",
+            },
+            "name": "ARAnalytics/CoreIOS",
+            "version": "5.0.1",
+          },
+          "Analytics": Object {
+            "labels": Object {
+              "checksum": "6541ce337e99d9f7a2240a8b3953940a7be5f998",
+              "repository": "https://github.com/cocoapods/specs.git",
+            },
+            "name": "Analytics",
+            "version": "3.6.9",
+          },
+        },
+        "labels": Object {
+          "checksum": "896e530551168721fbb8852e044b8afb9baffdde",
+          "repository": "https://github.com/cocoapods/specs.git",
+        },
+        "name": "ARAnalytics/Segmentio",
+        "version": "5.0.1",
+      },
+      "ARCollectionViewMasonryLayout": Object {
+        "labels": Object {
+          "checkoutOptionsCommit": "f22180d0267567fd3db62f903eaef1119b5c1f2d",
+          "checkoutOptionsGit": "https://github.com/ashfurrow/ARCollectionViewMasonryLayout",
+          "checksum": "97cb468434b546b79a98c7c0908447ff803eb85e",
+          "externalSourceGit": "https://github.com/ashfurrow/ARCollectionViewMasonryLayout",
+        },
+        "name": "ARCollectionViewMasonryLayout",
+        "version": "2.3.0",
+      },
+      "ARGenericTableViewController": Object {
+        "labels": Object {
+          "checkoutOptionsCommit": "f4c9028754558e196ab9c5111dcd3a4229c5bedf",
+          "checkoutOptionsGit": "https://github.com/orta/ARGenericTableViewController.git",
+          "checksum": "61a0897ba66c35111b5d1cc3b44884282bd3c1a5",
+          "externalSourceGit": "https://github.com/orta/ARGenericTableViewController.git",
+        },
+        "name": "ARGenericTableViewController",
+        "version": "1.0.2",
+      },
+      "ARTiledImageView": Object {
+        "dependencies": Object {
+          "SDWebImage/Core": Object {
+            "labels": Object {
+              "checksum": "1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84",
+              "repository": "https://github.com/cocoapods/specs.git",
+            },
+            "name": "SDWebImage/Core",
+            "version": "3.7.3",
+          },
+        },
+        "labels": Object {
+          "checkoutOptionsCommit": "775bc29beb5953e381b2af64edbdfc310b90e074",
+          "checkoutOptionsGit": "https://github.com/dblock/ARTiledImageView",
+          "checksum": "2db7735f5d3fcb4c859c912834a6a1bf20716377",
+          "externalSourceGit": "https://github.com/dblock/ARTiledImageView",
+        },
+        "name": "ARTiledImageView",
+        "version": "1.2.0",
+      },
+      "Aerodramus": Object {
+        "dependencies": Object {
+          "ISO8601DateFormatter": Object {
+            "labels": Object {
+              "checkoutOptionsCommit": "1a48b819c85903ded669e74e476aceffebf311fc",
+              "checkoutOptionsGit": "https://github.com/orta/iso-8601-date-formatter",
+              "checksum": "8311a2d4e265b269b2fed7ab4db685dcb0a7ccb2",
+              "externalSourceGit": "https://github.com/orta/iso-8601-date-formatter",
+            },
+            "name": "ISO8601DateFormatter",
+            "version": "0.7.1",
+          },
+        },
+        "labels": Object {
+          "checksum": "16b609776c84b6e0e785bb0ca1604b98473a8376",
+          "repository": "https://github.com/artsy/Specs.git",
+        },
+        "name": "Aerodramus",
+        "version": "1.0.0",
+      },
+      "Analytics": Object {
+        "labels": Object {
+          "checksum": "6541ce337e99d9f7a2240a8b3953940a7be5f998",
+          "repository": "https://github.com/cocoapods/specs.git",
+        },
+        "name": "Analytics",
+        "version": "3.6.9",
+      },
+      "Artsy+UIColors": Object {
+        "labels": Object {
+          "checksum": "31c03c4146f5e6618a9b950f37dfe02dd9ac09a6",
+          "repository": "https://github.com/artsy/Specs.git",
+        },
+        "name": "Artsy+UIColors",
+        "version": "3.1.0",
+      },
+      "Artsy+UIFonts": Object {
+        "labels": Object {
+          "checksum": "597c44f264aead6bdc21898b690addd90e14edbd",
+          "repository": "https://github.com/artsy/Specs.git",
+        },
+        "name": "Artsy+UIFonts",
+        "version": "3.3.3",
+      },
+      "Artsy+UILabels": Object {
+        "dependencies": Object {
+          "Artsy+UIColors": Object {
+            "labels": Object {
+              "checksum": "31c03c4146f5e6618a9b950f37dfe02dd9ac09a6",
+              "repository": "https://github.com/artsy/Specs.git",
+            },
+            "name": "Artsy+UIColors",
+            "version": "3.1.0",
+          },
+          "Artsy+UIFonts": Object {
+            "labels": Object {
+              "checksum": "597c44f264aead6bdc21898b690addd90e14edbd",
+              "repository": "https://github.com/artsy/Specs.git",
+            },
+            "name": "Artsy+UIFonts",
+            "version": "3.3.3",
+          },
+        },
+        "labels": Object {
+          "checksum": "7cb6e290a4f70dddba037b7dbeb21e90b49d7275",
+          "repository": "https://github.com/artsy/Specs.git",
+        },
+        "name": "Artsy+UILabels",
+        "version": "2.2.0",
+      },
+      "Artsy-UIButtons": Object {
+        "dependencies": Object {
+          "Artsy+UIColors": Object {
+            "labels": Object {
+              "checksum": "31c03c4146f5e6618a9b950f37dfe02dd9ac09a6",
+              "repository": "https://github.com/artsy/Specs.git",
+            },
+            "name": "Artsy+UIColors",
+            "version": "3.1.0",
+          },
+          "Artsy+UIFonts": Object {
+            "labels": Object {
+              "checksum": "597c44f264aead6bdc21898b690addd90e14edbd",
+              "repository": "https://github.com/artsy/Specs.git",
+            },
+            "name": "Artsy+UIFonts",
+            "version": "3.3.3",
+          },
+          "UIView+BooleanAnimations": Object {
+            "labels": Object {
+              "checksum": "a760be9a066036e55f298b7b7350a6cb14cfcd97",
+              "repository": "https://github.com/cocoapods/specs.git",
+            },
+            "name": "UIView+BooleanAnimations",
+            "version": "1.0.2",
+          },
+        },
+        "labels": Object {
+          "checksum": "3c396f0fad352a7b0332100e0ffcb0ca577e0082",
+          "repository": "https://github.com/artsy/Specs.git",
+        },
+        "name": "Artsy-UIButtons",
+        "version": "2.3.3",
+      },
+      "CocoaLumberjack": Object {
+        "dependencies": Object {
+          "CocoaLumberjack/Default": Object {
+            "dependencies": Object {
+              "CocoaLumberjack/Core": Object {
+                "labels": Object {
+                  "checkoutOptionsCommit": "a09dd37888d9f51159c4926d4280794f915d726c",
+                  "checkoutOptionsGit": "https://github.com/CocoaLumberjack/CocoaLumberjack.git",
+                  "checksum": "27ae9abcd376c3e4ee726ecd4adfd7b093ddef3f",
+                  "externalSourceGit": "https://github.com/CocoaLumberjack/CocoaLumberjack.git",
+                },
+                "name": "CocoaLumberjack/Core",
+                "version": "2.0.1",
+              },
+            },
+            "labels": Object {
+              "checkoutOptionsCommit": "a09dd37888d9f51159c4926d4280794f915d726c",
+              "checkoutOptionsGit": "https://github.com/CocoaLumberjack/CocoaLumberjack.git",
+              "checksum": "27ae9abcd376c3e4ee726ecd4adfd7b093ddef3f",
+              "externalSourceGit": "https://github.com/CocoaLumberjack/CocoaLumberjack.git",
+            },
+            "name": "CocoaLumberjack/Default",
+            "version": "2.0.1",
+          },
+          "CocoaLumberjack/Extensions": Object {
+            "dependencies": Object {
+              "CocoaLumberjack/Default": Object {
+                "dependencies": Object {
+                  "CocoaLumberjack/Core": Object {
+                    "labels": Object {
+                      "checkoutOptionsCommit": "a09dd37888d9f51159c4926d4280794f915d726c",
+                      "checkoutOptionsGit": "https://github.com/CocoaLumberjack/CocoaLumberjack.git",
+                      "checksum": "27ae9abcd376c3e4ee726ecd4adfd7b093ddef3f",
+                      "externalSourceGit": "https://github.com/CocoaLumberjack/CocoaLumberjack.git",
+                    },
+                    "name": "CocoaLumberjack/Core",
+                    "version": "2.0.1",
+                  },
+                },
+                "labels": Object {
+                  "checkoutOptionsCommit": "a09dd37888d9f51159c4926d4280794f915d726c",
+                  "checkoutOptionsGit": "https://github.com/CocoaLumberjack/CocoaLumberjack.git",
+                  "checksum": "27ae9abcd376c3e4ee726ecd4adfd7b093ddef3f",
+                  "externalSourceGit": "https://github.com/CocoaLumberjack/CocoaLumberjack.git",
+                },
+                "name": "CocoaLumberjack/Default",
+                "version": "2.0.1",
+              },
+            },
+            "labels": Object {
+              "checkoutOptionsCommit": "a09dd37888d9f51159c4926d4280794f915d726c",
+              "checkoutOptionsGit": "https://github.com/CocoaLumberjack/CocoaLumberjack.git",
+              "checksum": "27ae9abcd376c3e4ee726ecd4adfd7b093ddef3f",
+              "externalSourceGit": "https://github.com/CocoaLumberjack/CocoaLumberjack.git",
+            },
+            "name": "CocoaLumberjack/Extensions",
+            "version": "2.0.1",
+          },
+        },
+        "labels": Object {
+          "checkoutOptionsCommit": "a09dd37888d9f51159c4926d4280794f915d726c",
+          "checkoutOptionsGit": "https://github.com/CocoaLumberjack/CocoaLumberjack.git",
+          "checksum": "27ae9abcd376c3e4ee726ecd4adfd7b093ddef3f",
+          "externalSourceGit": "https://github.com/CocoaLumberjack/CocoaLumberjack.git",
+        },
+        "name": "CocoaLumberjack",
+        "version": "2.0.1",
+      },
+      "DHCShakeNotifier": Object {
+        "labels": Object {
+          "checksum": "64048427ecaa763f2472d0032f58bf7a10074eee",
+          "repository": "https://github.com/cocoapods/specs.git",
+        },
+        "name": "DHCShakeNotifier",
+        "version": "0.2.0",
+      },
+      "EDColor": Object {
+        "labels": Object {
+          "checksum": "c83f9a61f9f9b3c23d541f1feb561558e29cb088",
+          "repository": "https://github.com/cocoapods/specs.git",
+        },
+        "name": "EDColor",
+        "version": "1.0.0",
+      },
+      "Emission": Object {
+        "dependencies": Object {
+          "Artsy+UIColors": Object {
+            "labels": Object {
+              "checksum": "31c03c4146f5e6618a9b950f37dfe02dd9ac09a6",
+              "repository": "https://github.com/artsy/Specs.git",
+            },
+            "name": "Artsy+UIColors",
+            "version": "3.1.0",
+          },
+          "Artsy+UIFonts": Object {
+            "labels": Object {
+              "checksum": "597c44f264aead6bdc21898b690addd90e14edbd",
+              "repository": "https://github.com/artsy/Specs.git",
+            },
+            "name": "Artsy+UIFonts",
+            "version": "3.3.3",
+          },
+          "DoubleConversion": Object {
+            "labels": Object {
+              "checksum": "bb338842f62ab1d708ceb63ec3d999f0f3d98ecd",
+              "repository": "https://github.com/artsy/Specs.git",
+            },
+            "name": "DoubleConversion",
+            "version": "1.1.6",
+          },
+          "Extraction": Object {
+            "dependencies": Object {
+              "Extraction/ARAnimationContinuation": Object {
+                "labels": Object {
+                  "checksum": "642a73b8ccc7806e9a7daf95ebb4c14c374829f1",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "Extraction/ARAnimationContinuation",
+                "version": "1.2.4",
+              },
+              "Extraction/ARLoadFailureView": Object {
+                "dependencies": Object {
+                  "Artsy-UIButtons": Object {
+                    "dependencies": Object {
+                      "Artsy+UIColors": Object {
+                        "labels": Object {
+                          "checksum": "31c03c4146f5e6618a9b950f37dfe02dd9ac09a6",
+                          "repository": "https://github.com/artsy/Specs.git",
+                        },
+                        "name": "Artsy+UIColors",
+                        "version": "3.1.0",
+                      },
+                      "Artsy+UIFonts": Object {
+                        "labels": Object {
+                          "checksum": "597c44f264aead6bdc21898b690addd90e14edbd",
+                          "repository": "https://github.com/artsy/Specs.git",
+                        },
+                        "name": "Artsy+UIFonts",
+                        "version": "3.3.3",
+                      },
+                      "UIView+BooleanAnimations": Object {
+                        "labels": Object {
+                          "checksum": "a760be9a066036e55f298b7b7350a6cb14cfcd97",
+                          "repository": "https://github.com/cocoapods/specs.git",
+                        },
+                        "name": "UIView+BooleanAnimations",
+                        "version": "1.0.2",
+                      },
+                    },
+                    "labels": Object {
+                      "checksum": "3c396f0fad352a7b0332100e0ffcb0ca577e0082",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "Artsy-UIButtons",
+                    "version": "2.3.3",
+                  },
+                  "Extraction/UILabel+Typography": Object {
+                    "labels": Object {
+                      "checksum": "642a73b8ccc7806e9a7daf95ebb4c14c374829f1",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "Extraction/UILabel+Typography",
+                    "version": "1.2.4",
+                  },
+                  "ORStackView": Object {
+                    "dependencies": Object {
+                      "FLKAutoLayout": Object {
+                        "labels": Object {
+                          "checkoutOptionsCommit": "4aa27fa1a9aba36d5465e6cd181ba4b78b0691d3",
+                          "checkoutOptionsGit": "https://github.com/orta/FLKAutoLayout.git",
+                          "checksum": "106b14dbae09d32c6730190f4e78a959759ba4a4",
+                          "externalSourceBranch": "v1",
+                          "externalSourceGit": "https://github.com/orta/FLKAutoLayout.git",
+                        },
+                        "name": "FLKAutoLayout",
+                        "version": "1.0.0",
+                      },
+                    },
+                    "labels": Object {
+                      "checksum": "b9507271cb41fb9e0b3eecc6414d831201e7cf7c",
+                      "repository": "https://github.com/cocoapods/specs.git",
+                    },
+                    "name": "ORStackView",
+                    "version": "2.0.3",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "642a73b8ccc7806e9a7daf95ebb4c14c374829f1",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "Extraction/ARLoadFailureView",
+                "version": "1.2.4",
+              },
+              "Extraction/ARSpinner": Object {
+                "dependencies": Object {
+                  "Extraction/UIView+ARSpinner": Object {
+                    "dependencies": Object {
+                      "Extraction/ARAnimationContinuation": Object {
+                        "labels": Object {
+                          "checksum": "642a73b8ccc7806e9a7daf95ebb4c14c374829f1",
+                          "repository": "https://github.com/artsy/Specs.git",
+                        },
+                        "name": "Extraction/ARAnimationContinuation",
+                        "version": "1.2.4",
+                      },
+                    },
+                    "labels": Object {
+                      "checksum": "642a73b8ccc7806e9a7daf95ebb4c14c374829f1",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "Extraction/UIView+ARSpinner",
+                    "version": "1.2.4",
+                  },
+                  "UIView+BooleanAnimations": Object {
+                    "labels": Object {
+                      "checksum": "a760be9a066036e55f298b7b7350a6cb14cfcd97",
+                      "repository": "https://github.com/cocoapods/specs.git",
+                    },
+                    "name": "UIView+BooleanAnimations",
+                    "version": "1.0.2",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "642a73b8ccc7806e9a7daf95ebb4c14c374829f1",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "Extraction/ARSpinner",
+                "version": "1.2.4",
+              },
+              "Extraction/ARSwitchView": Object {
+                "dependencies": Object {
+                  "Artsy+UIColors": Object {
+                    "labels": Object {
+                      "checksum": "31c03c4146f5e6618a9b950f37dfe02dd9ac09a6",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "Artsy+UIColors",
+                    "version": "3.1.0",
+                  },
+                  "Artsy+UIFonts": Object {
+                    "labels": Object {
+                      "checksum": "597c44f264aead6bdc21898b690addd90e14edbd",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "Artsy+UIFonts",
+                    "version": "3.3.3",
+                  },
+                  "FLKAutoLayout": Object {
+                    "labels": Object {
+                      "checkoutOptionsCommit": "4aa27fa1a9aba36d5465e6cd181ba4b78b0691d3",
+                      "checkoutOptionsGit": "https://github.com/orta/FLKAutoLayout.git",
+                      "checksum": "106b14dbae09d32c6730190f4e78a959759ba4a4",
+                      "externalSourceBranch": "v1",
+                      "externalSourceGit": "https://github.com/orta/FLKAutoLayout.git",
+                    },
+                    "name": "FLKAutoLayout",
+                    "version": "1.0.0",
+                  },
+                  "UIView+BooleanAnimations": Object {
+                    "labels": Object {
+                      "checksum": "a760be9a066036e55f298b7b7350a6cb14cfcd97",
+                      "repository": "https://github.com/cocoapods/specs.git",
+                    },
+                    "name": "UIView+BooleanAnimations",
+                    "version": "1.0.2",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "642a73b8ccc7806e9a7daf95ebb4c14c374829f1",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "Extraction/ARSwitchView",
+                "version": "1.2.4",
+              },
+              "Extraction/UILabel+Typography": Object {
+                "labels": Object {
+                  "checksum": "642a73b8ccc7806e9a7daf95ebb4c14c374829f1",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "Extraction/UILabel+Typography",
+                "version": "1.2.4",
+              },
+              "Extraction/UIView+ARSpinner": Object {
+                "dependencies": Object {
+                  "Extraction/ARAnimationContinuation": Object {
+                    "labels": Object {
+                      "checksum": "642a73b8ccc7806e9a7daf95ebb4c14c374829f1",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "Extraction/ARAnimationContinuation",
+                    "version": "1.2.4",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "642a73b8ccc7806e9a7daf95ebb4c14c374829f1",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "Extraction/UIView+ARSpinner",
+                "version": "1.2.4",
+              },
+            },
+            "labels": Object {
+              "checksum": "642a73b8ccc7806e9a7daf95ebb4c14c374829f1",
+              "repository": "https://github.com/artsy/Specs.git",
+            },
+            "name": "Extraction",
+            "version": "1.2.4",
+          },
+          "Folly": Object {
+            "dependencies": Object {
+              "DoubleConversion": Object {
+                "labels": Object {
+                  "checksum": "bb338842f62ab1d708ceb63ec3d999f0f3d98ecd",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "DoubleConversion",
+                "version": "1.1.6",
+              },
+              "boost-for-react-native": Object {
+                "labels": Object {
+                  "checksum": "39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c",
+                  "repository": "https://github.com/cocoapods/specs.git",
+                },
+                "name": "boost-for-react-native",
+                "version": "1.63.0",
+              },
+              "glog": Object {
+                "labels": Object {
+                  "checksum": "affb802cb73dc1156005a5fb19085008bf6ffd52",
+                  "externalSourcePodspec": "./externals/glog/glog.podspec",
+                },
+                "name": "glog",
+                "version": "0.3.5",
+              },
+            },
+            "labels": Object {
+              "checksum": "de497beb10f102453a1afa9edbf8cf8a251890de",
+              "repository": "https://github.com/artsy/Specs.git",
+            },
+            "name": "Folly",
+            "version": "2018.10.22.00",
+          },
+          "ISO8601DateFormatter": Object {
+            "labels": Object {
+              "checkoutOptionsCommit": "1a48b819c85903ded669e74e476aceffebf311fc",
+              "checkoutOptionsGit": "https://github.com/orta/iso-8601-date-formatter",
+              "checksum": "8311a2d4e265b269b2fed7ab4db685dcb0a7ccb2",
+              "externalSourceGit": "https://github.com/orta/iso-8601-date-formatter",
+            },
+            "name": "ISO8601DateFormatter",
+            "version": "0.7.1",
+          },
+          "Pulley": Object {
+            "labels": Object {
+              "checkoutOptionsCommit": "23f1c0e8cad5a72d03176fe33535c14726e7a160",
+              "checkoutOptionsGit": "https://github.com/l2succes/Pulley.git",
+              "checksum": "2679a2b5a9714c5eb760b1fbb535d15c60e50fb4",
+              "externalSourceBranch": "master",
+              "externalSourceGit": "https://github.com/l2succes/Pulley.git",
+            },
+            "name": "Pulley",
+            "version": "2.6.2",
+          },
+          "RNSVG": Object {
+            "dependencies": Object {
+              "React": Object {
+                "dependencies": Object {
+                  "React/Core": Object {
+                    "dependencies": Object {
+                      "yoga": Object {
+                        "labels": Object {
+                          "checksum": "4ce3811b3db5f47fe1e125f15383003316a616b8",
+                          "repository": "https://github.com/artsy/Specs.git",
+                        },
+                        "name": "yoga",
+                        "version": "0.59.2.React",
+                      },
+                    },
+                    "labels": Object {
+                      "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "React/Core",
+                    "version": "0.59.2",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "React",
+                "version": "0.59.2",
+              },
+            },
+            "labels": Object {
+              "checkoutOptionsGit": "https://github.com/react-native-community/react-native-svg.git",
+              "checkoutOptionsTag": "v9.4.0",
+              "checksum": "9cb6e958c4b6a1f58185ac72a350b148947d6fed",
+              "externalSourceGit": "https://github.com/react-native-community/react-native-svg.git",
+              "externalSourceTag": "v9.4.0",
+            },
+            "name": "RNSVG",
+            "version": "9.4.0",
+          },
+          "React/Core": Object {
+            "dependencies": Object {
+              "yoga": Object {
+                "labels": Object {
+                  "checksum": "4ce3811b3db5f47fe1e125f15383003316a616b8",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "yoga",
+                "version": "0.59.2.React",
+              },
+            },
+            "labels": Object {
+              "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+              "repository": "https://github.com/artsy/Specs.git",
+            },
+            "name": "React/Core",
+            "version": "0.59.2",
+          },
+          "React/CxxBridge": Object {
+            "dependencies": Object {
+              "Folly": Object {
+                "dependencies": Object {
+                  "DoubleConversion": Object {
+                    "labels": Object {
+                      "checksum": "bb338842f62ab1d708ceb63ec3d999f0f3d98ecd",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "DoubleConversion",
+                    "version": "1.1.6",
+                  },
+                  "boost-for-react-native": Object {
+                    "labels": Object {
+                      "checksum": "39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c",
+                      "repository": "https://github.com/cocoapods/specs.git",
+                    },
+                    "name": "boost-for-react-native",
+                    "version": "1.63.0",
+                  },
+                  "glog": Object {
+                    "labels": Object {
+                      "checksum": "affb802cb73dc1156005a5fb19085008bf6ffd52",
+                      "externalSourcePodspec": "./externals/glog/glog.podspec",
+                    },
+                    "name": "glog",
+                    "version": "0.3.5",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "de497beb10f102453a1afa9edbf8cf8a251890de",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "Folly",
+                "version": "2018.10.22.00",
+              },
+              "React/Core": Object {
+                "dependencies": Object {
+                  "yoga": Object {
+                    "labels": Object {
+                      "checksum": "4ce3811b3db5f47fe1e125f15383003316a616b8",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "yoga",
+                    "version": "0.59.2.React",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "React/Core",
+                "version": "0.59.2",
+              },
+              "React/cxxreact": Object {
+                "dependencies": Object {
+                  "DoubleConversion": Object {
+                    "labels": Object {
+                      "checksum": "bb338842f62ab1d708ceb63ec3d999f0f3d98ecd",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "DoubleConversion",
+                    "version": "1.1.6",
+                  },
+                  "Folly": Object {
+                    "dependencies": Object {
+                      "DoubleConversion": Object {
+                        "labels": Object {
+                          "checksum": "bb338842f62ab1d708ceb63ec3d999f0f3d98ecd",
+                          "repository": "https://github.com/artsy/Specs.git",
+                        },
+                        "name": "DoubleConversion",
+                        "version": "1.1.6",
+                      },
+                      "boost-for-react-native": Object {
+                        "labels": Object {
+                          "checksum": "39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c",
+                          "repository": "https://github.com/cocoapods/specs.git",
+                        },
+                        "name": "boost-for-react-native",
+                        "version": "1.63.0",
+                      },
+                      "glog": Object {
+                        "labels": Object {
+                          "checksum": "affb802cb73dc1156005a5fb19085008bf6ffd52",
+                          "externalSourcePodspec": "./externals/glog/glog.podspec",
+                        },
+                        "name": "glog",
+                        "version": "0.3.5",
+                      },
+                    },
+                    "labels": Object {
+                      "checksum": "de497beb10f102453a1afa9edbf8cf8a251890de",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "Folly",
+                    "version": "2018.10.22.00",
+                  },
+                  "React/jsinspector": Object {
+                    "labels": Object {
+                      "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "React/jsinspector",
+                    "version": "0.59.2",
+                  },
+                  "boost-for-react-native": Object {
+                    "labels": Object {
+                      "checksum": "39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c",
+                      "repository": "https://github.com/cocoapods/specs.git",
+                    },
+                    "name": "boost-for-react-native",
+                    "version": "1.63.0",
+                  },
+                  "glog": Object {
+                    "labels": Object {
+                      "checksum": "affb802cb73dc1156005a5fb19085008bf6ffd52",
+                      "externalSourcePodspec": "./externals/glog/glog.podspec",
+                    },
+                    "name": "glog",
+                    "version": "0.3.5",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "React/cxxreact",
+                "version": "0.59.2",
+              },
+              "React/jsiexecutor": Object {
+                "dependencies": Object {
+                  "DoubleConversion": Object {
+                    "labels": Object {
+                      "checksum": "bb338842f62ab1d708ceb63ec3d999f0f3d98ecd",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "DoubleConversion",
+                    "version": "1.1.6",
+                  },
+                  "Folly": Object {
+                    "dependencies": Object {
+                      "DoubleConversion": Object {
+                        "labels": Object {
+                          "checksum": "bb338842f62ab1d708ceb63ec3d999f0f3d98ecd",
+                          "repository": "https://github.com/artsy/Specs.git",
+                        },
+                        "name": "DoubleConversion",
+                        "version": "1.1.6",
+                      },
+                      "boost-for-react-native": Object {
+                        "labels": Object {
+                          "checksum": "39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c",
+                          "repository": "https://github.com/cocoapods/specs.git",
+                        },
+                        "name": "boost-for-react-native",
+                        "version": "1.63.0",
+                      },
+                      "glog": Object {
+                        "labels": Object {
+                          "checksum": "affb802cb73dc1156005a5fb19085008bf6ffd52",
+                          "externalSourcePodspec": "./externals/glog/glog.podspec",
+                        },
+                        "name": "glog",
+                        "version": "0.3.5",
+                      },
+                    },
+                    "labels": Object {
+                      "checksum": "de497beb10f102453a1afa9edbf8cf8a251890de",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "Folly",
+                    "version": "2018.10.22.00",
+                  },
+                  "React/cxxreact": Object {
+                    "dependencies": Object {
+                      "DoubleConversion": Object {
+                        "labels": Object {
+                          "checksum": "bb338842f62ab1d708ceb63ec3d999f0f3d98ecd",
+                          "repository": "https://github.com/artsy/Specs.git",
+                        },
+                        "name": "DoubleConversion",
+                        "version": "1.1.6",
+                      },
+                      "Folly": Object {
+                        "dependencies": Object {
+                          "DoubleConversion": Object {
+                            "labels": Object {
+                              "checksum": "bb338842f62ab1d708ceb63ec3d999f0f3d98ecd",
+                              "repository": "https://github.com/artsy/Specs.git",
+                            },
+                            "name": "DoubleConversion",
+                            "version": "1.1.6",
+                          },
+                          "boost-for-react-native": Object {
+                            "labels": Object {
+                              "checksum": "39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c",
+                              "repository": "https://github.com/cocoapods/specs.git",
+                            },
+                            "name": "boost-for-react-native",
+                            "version": "1.63.0",
+                          },
+                          "glog": Object {
+                            "labels": Object {
+                              "checksum": "affb802cb73dc1156005a5fb19085008bf6ffd52",
+                              "externalSourcePodspec": "./externals/glog/glog.podspec",
+                            },
+                            "name": "glog",
+                            "version": "0.3.5",
+                          },
+                        },
+                        "labels": Object {
+                          "checksum": "de497beb10f102453a1afa9edbf8cf8a251890de",
+                          "repository": "https://github.com/artsy/Specs.git",
+                        },
+                        "name": "Folly",
+                        "version": "2018.10.22.00",
+                      },
+                      "React/jsinspector": Object {
+                        "labels": Object {
+                          "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                          "repository": "https://github.com/artsy/Specs.git",
+                        },
+                        "name": "React/jsinspector",
+                        "version": "0.59.2",
+                      },
+                      "boost-for-react-native": Object {
+                        "labels": Object {
+                          "checksum": "39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c",
+                          "repository": "https://github.com/cocoapods/specs.git",
+                        },
+                        "name": "boost-for-react-native",
+                        "version": "1.63.0",
+                      },
+                      "glog": Object {
+                        "labels": Object {
+                          "checksum": "affb802cb73dc1156005a5fb19085008bf6ffd52",
+                          "externalSourcePodspec": "./externals/glog/glog.podspec",
+                        },
+                        "name": "glog",
+                        "version": "0.3.5",
+                      },
+                    },
+                    "labels": Object {
+                      "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "React/cxxreact",
+                    "version": "0.59.2",
+                  },
+                  "React/jsi": Object {
+                    "dependencies": Object {
+                      "DoubleConversion": Object {
+                        "labels": Object {
+                          "checksum": "bb338842f62ab1d708ceb63ec3d999f0f3d98ecd",
+                          "repository": "https://github.com/artsy/Specs.git",
+                        },
+                        "name": "DoubleConversion",
+                        "version": "1.1.6",
+                      },
+                      "Folly": Object {
+                        "dependencies": Object {
+                          "DoubleConversion": Object {
+                            "labels": Object {
+                              "checksum": "bb338842f62ab1d708ceb63ec3d999f0f3d98ecd",
+                              "repository": "https://github.com/artsy/Specs.git",
+                            },
+                            "name": "DoubleConversion",
+                            "version": "1.1.6",
+                          },
+                          "boost-for-react-native": Object {
+                            "labels": Object {
+                              "checksum": "39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c",
+                              "repository": "https://github.com/cocoapods/specs.git",
+                            },
+                            "name": "boost-for-react-native",
+                            "version": "1.63.0",
+                          },
+                          "glog": Object {
+                            "labels": Object {
+                              "checksum": "affb802cb73dc1156005a5fb19085008bf6ffd52",
+                              "externalSourcePodspec": "./externals/glog/glog.podspec",
+                            },
+                            "name": "glog",
+                            "version": "0.3.5",
+                          },
+                        },
+                        "labels": Object {
+                          "checksum": "de497beb10f102453a1afa9edbf8cf8a251890de",
+                          "repository": "https://github.com/artsy/Specs.git",
+                        },
+                        "name": "Folly",
+                        "version": "2018.10.22.00",
+                      },
+                      "glog": Object {
+                        "labels": Object {
+                          "checksum": "affb802cb73dc1156005a5fb19085008bf6ffd52",
+                          "externalSourcePodspec": "./externals/glog/glog.podspec",
+                        },
+                        "name": "glog",
+                        "version": "0.3.5",
+                      },
+                    },
+                    "labels": Object {
+                      "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "React/jsi",
+                    "version": "0.59.2",
+                  },
+                  "glog": Object {
+                    "labels": Object {
+                      "checksum": "affb802cb73dc1156005a5fb19085008bf6ffd52",
+                      "externalSourcePodspec": "./externals/glog/glog.podspec",
+                    },
+                    "name": "glog",
+                    "version": "0.3.5",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "React/jsiexecutor",
+                "version": "0.59.2",
+              },
+            },
+            "labels": Object {
+              "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+              "repository": "https://github.com/artsy/Specs.git",
+            },
+            "name": "React/CxxBridge",
+            "version": "0.59.2",
+          },
+          "React/RCTActionSheet": Object {
+            "dependencies": Object {
+              "React/Core": Object {
+                "dependencies": Object {
+                  "yoga": Object {
+                    "labels": Object {
+                      "checksum": "4ce3811b3db5f47fe1e125f15383003316a616b8",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "yoga",
+                    "version": "0.59.2.React",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "React/Core",
+                "version": "0.59.2",
+              },
+            },
+            "labels": Object {
+              "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+              "repository": "https://github.com/artsy/Specs.git",
+            },
+            "name": "React/RCTActionSheet",
+            "version": "0.59.2",
+          },
+          "React/RCTAnimation": Object {
+            "dependencies": Object {
+              "React/Core": Object {
+                "dependencies": Object {
+                  "yoga": Object {
+                    "labels": Object {
+                      "checksum": "4ce3811b3db5f47fe1e125f15383003316a616b8",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "yoga",
+                    "version": "0.59.2.React",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "React/Core",
+                "version": "0.59.2",
+              },
+            },
+            "labels": Object {
+              "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+              "repository": "https://github.com/artsy/Specs.git",
+            },
+            "name": "React/RCTAnimation",
+            "version": "0.59.2",
+          },
+          "React/RCTCameraRoll": Object {
+            "dependencies": Object {
+              "React/Core": Object {
+                "dependencies": Object {
+                  "yoga": Object {
+                    "labels": Object {
+                      "checksum": "4ce3811b3db5f47fe1e125f15383003316a616b8",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "yoga",
+                    "version": "0.59.2.React",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "React/Core",
+                "version": "0.59.2",
+              },
+              "React/RCTImage": Object {
+                "dependencies": Object {
+                  "React/Core": Object {
+                    "dependencies": Object {
+                      "yoga": Object {
+                        "labels": Object {
+                          "checksum": "4ce3811b3db5f47fe1e125f15383003316a616b8",
+                          "repository": "https://github.com/artsy/Specs.git",
+                        },
+                        "name": "yoga",
+                        "version": "0.59.2.React",
+                      },
+                    },
+                    "labels": Object {
+                      "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "React/Core",
+                    "version": "0.59.2",
+                  },
+                  "React/RCTNetwork": Object {
+                    "dependencies": Object {
+                      "React/Core": Object {
+                        "dependencies": Object {
+                          "yoga": Object {
+                            "labels": Object {
+                              "checksum": "4ce3811b3db5f47fe1e125f15383003316a616b8",
+                              "repository": "https://github.com/artsy/Specs.git",
+                            },
+                            "name": "yoga",
+                            "version": "0.59.2.React",
+                          },
+                        },
+                        "labels": Object {
+                          "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                          "repository": "https://github.com/artsy/Specs.git",
+                        },
+                        "name": "React/Core",
+                        "version": "0.59.2",
+                      },
+                    },
+                    "labels": Object {
+                      "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "React/RCTNetwork",
+                    "version": "0.59.2",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "React/RCTImage",
+                "version": "0.59.2",
+              },
+            },
+            "labels": Object {
+              "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+              "repository": "https://github.com/artsy/Specs.git",
+            },
+            "name": "React/RCTCameraRoll",
+            "version": "0.59.2",
+          },
+          "React/RCTGeolocation": Object {
+            "dependencies": Object {
+              "React/Core": Object {
+                "dependencies": Object {
+                  "yoga": Object {
+                    "labels": Object {
+                      "checksum": "4ce3811b3db5f47fe1e125f15383003316a616b8",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "yoga",
+                    "version": "0.59.2.React",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "React/Core",
+                "version": "0.59.2",
+              },
+            },
+            "labels": Object {
+              "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+              "repository": "https://github.com/artsy/Specs.git",
+            },
+            "name": "React/RCTGeolocation",
+            "version": "0.59.2",
+          },
+          "React/RCTImage": Object {
+            "dependencies": Object {
+              "React/Core": Object {
+                "dependencies": Object {
+                  "yoga": Object {
+                    "labels": Object {
+                      "checksum": "4ce3811b3db5f47fe1e125f15383003316a616b8",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "yoga",
+                    "version": "0.59.2.React",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "React/Core",
+                "version": "0.59.2",
+              },
+              "React/RCTNetwork": Object {
+                "dependencies": Object {
+                  "React/Core": Object {
+                    "dependencies": Object {
+                      "yoga": Object {
+                        "labels": Object {
+                          "checksum": "4ce3811b3db5f47fe1e125f15383003316a616b8",
+                          "repository": "https://github.com/artsy/Specs.git",
+                        },
+                        "name": "yoga",
+                        "version": "0.59.2.React",
+                      },
+                    },
+                    "labels": Object {
+                      "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "React/Core",
+                    "version": "0.59.2",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "React/RCTNetwork",
+                "version": "0.59.2",
+              },
+            },
+            "labels": Object {
+              "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+              "repository": "https://github.com/artsy/Specs.git",
+            },
+            "name": "React/RCTImage",
+            "version": "0.59.2",
+          },
+          "React/RCTLinkingIOS": Object {
+            "dependencies": Object {
+              "React/Core": Object {
+                "dependencies": Object {
+                  "yoga": Object {
+                    "labels": Object {
+                      "checksum": "4ce3811b3db5f47fe1e125f15383003316a616b8",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "yoga",
+                    "version": "0.59.2.React",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "React/Core",
+                "version": "0.59.2",
+              },
+            },
+            "labels": Object {
+              "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+              "repository": "https://github.com/artsy/Specs.git",
+            },
+            "name": "React/RCTLinkingIOS",
+            "version": "0.59.2",
+          },
+          "React/RCTNetwork": Object {
+            "dependencies": Object {
+              "React/Core": Object {
+                "dependencies": Object {
+                  "yoga": Object {
+                    "labels": Object {
+                      "checksum": "4ce3811b3db5f47fe1e125f15383003316a616b8",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "yoga",
+                    "version": "0.59.2.React",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "React/Core",
+                "version": "0.59.2",
+              },
+            },
+            "labels": Object {
+              "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+              "repository": "https://github.com/artsy/Specs.git",
+            },
+            "name": "React/RCTNetwork",
+            "version": "0.59.2",
+          },
+          "React/RCTText": Object {
+            "dependencies": Object {
+              "React/Core": Object {
+                "dependencies": Object {
+                  "yoga": Object {
+                    "labels": Object {
+                      "checksum": "4ce3811b3db5f47fe1e125f15383003316a616b8",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "yoga",
+                    "version": "0.59.2.React",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "React/Core",
+                "version": "0.59.2",
+              },
+            },
+            "labels": Object {
+              "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+              "repository": "https://github.com/artsy/Specs.git",
+            },
+            "name": "React/RCTText",
+            "version": "0.59.2",
+          },
+          "SDWebImage": Object {
+            "dependencies": Object {
+              "SDWebImage/Core": Object {
+                "labels": Object {
+                  "checksum": "1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84",
+                  "repository": "https://github.com/cocoapods/specs.git",
+                },
+                "name": "SDWebImage/Core",
+                "version": "3.7.3",
+              },
+            },
+            "labels": Object {
+              "checksum": "1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84",
+              "repository": "https://github.com/cocoapods/specs.git",
+            },
+            "name": "SDWebImage",
+            "version": "3.7.3",
+          },
+          "SentryReactNative": Object {
+            "dependencies": Object {
+              "React": Object {
+                "dependencies": Object {
+                  "React/Core": Object {
+                    "dependencies": Object {
+                      "yoga": Object {
+                        "labels": Object {
+                          "checksum": "4ce3811b3db5f47fe1e125f15383003316a616b8",
+                          "repository": "https://github.com/artsy/Specs.git",
+                        },
+                        "name": "yoga",
+                        "version": "0.59.2.React",
+                      },
+                    },
+                    "labels": Object {
+                      "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "React/Core",
+                    "version": "0.59.2",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "React",
+                "version": "0.59.2",
+              },
+              "Sentry": Object {
+                "dependencies": Object {
+                  "Sentry/Core": Object {
+                    "labels": Object {
+                      "checksum": "e2707f9a6b498277d9620a48fcb1bd3b655c8473",
+                      "repository": "https://github.com/cocoapods/specs.git",
+                    },
+                    "name": "Sentry/Core",
+                    "version": "3.9.1",
+                  },
+                  "Sentry/KSCrash": Object {
+                    "dependencies": Object {
+                      "KSCrash/Core": Object {
+                        "dependencies": Object {
+                          "KSCrash/Reporting/Filters/Basic": Object {
+                            "dependencies": Object {
+                              "KSCrash/Recording": Object {
+                                "dependencies": Object {
+                                  "KSCrash/Recording/Tools": Object {
+                                    "labels": Object {
+                                      "checksum": "5394936f41e5c1ef7b79cf79b30d53299b0c160e",
+                                      "repository": "https://github.com/cocoapods/specs.git",
+                                    },
+                                    "name": "KSCrash/Recording/Tools",
+                                    "version": "1.15.18",
+                                  },
+                                },
+                                "labels": Object {
+                                  "checksum": "5394936f41e5c1ef7b79cf79b30d53299b0c160e",
+                                  "repository": "https://github.com/cocoapods/specs.git",
+                                },
+                                "name": "KSCrash/Recording",
+                                "version": "1.15.18",
+                              },
+                              "KSCrash/Reporting/Filters/Base": Object {
+                                "dependencies": Object {
+                                  "KSCrash/Recording": Object {
+                                    "dependencies": Object {
+                                      "KSCrash/Recording/Tools": Object {
+                                        "labels": Object {
+                                          "checksum": "5394936f41e5c1ef7b79cf79b30d53299b0c160e",
+                                          "repository": "https://github.com/cocoapods/specs.git",
+                                        },
+                                        "name": "KSCrash/Recording/Tools",
+                                        "version": "1.15.18",
+                                      },
+                                    },
+                                    "labels": Object {
+                                      "checksum": "5394936f41e5c1ef7b79cf79b30d53299b0c160e",
+                                      "repository": "https://github.com/cocoapods/specs.git",
+                                    },
+                                    "name": "KSCrash/Recording",
+                                    "version": "1.15.18",
+                                  },
+                                },
+                                "labels": Object {
+                                  "checksum": "5394936f41e5c1ef7b79cf79b30d53299b0c160e",
+                                  "repository": "https://github.com/cocoapods/specs.git",
+                                },
+                                "name": "KSCrash/Reporting/Filters/Base",
+                                "version": "1.15.18",
+                              },
+                            },
+                            "labels": Object {
+                              "checksum": "5394936f41e5c1ef7b79cf79b30d53299b0c160e",
+                              "repository": "https://github.com/cocoapods/specs.git",
+                            },
+                            "name": "KSCrash/Reporting/Filters/Basic",
+                            "version": "1.15.18",
+                          },
+                        },
+                        "labels": Object {
+                          "checksum": "5394936f41e5c1ef7b79cf79b30d53299b0c160e",
+                          "repository": "https://github.com/cocoapods/specs.git",
+                        },
+                        "name": "KSCrash/Core",
+                        "version": "1.15.18",
+                      },
+                    },
+                    "labels": Object {
+                      "checksum": "e2707f9a6b498277d9620a48fcb1bd3b655c8473",
+                      "repository": "https://github.com/cocoapods/specs.git",
+                    },
+                    "name": "Sentry/KSCrash",
+                    "version": "3.9.1",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "e2707f9a6b498277d9620a48fcb1bd3b655c8473",
+                  "repository": "https://github.com/cocoapods/specs.git",
+                },
+                "name": "Sentry",
+                "version": "3.9.1",
+              },
+              "Sentry/KSCrash": Object {
+                "dependencies": Object {
+                  "KSCrash/Core": Object {
+                    "dependencies": Object {
+                      "KSCrash/Reporting/Filters/Basic": Object {
+                        "dependencies": Object {
+                          "KSCrash/Recording": Object {
+                            "dependencies": Object {
+                              "KSCrash/Recording/Tools": Object {
+                                "labels": Object {
+                                  "checksum": "5394936f41e5c1ef7b79cf79b30d53299b0c160e",
+                                  "repository": "https://github.com/cocoapods/specs.git",
+                                },
+                                "name": "KSCrash/Recording/Tools",
+                                "version": "1.15.18",
+                              },
+                            },
+                            "labels": Object {
+                              "checksum": "5394936f41e5c1ef7b79cf79b30d53299b0c160e",
+                              "repository": "https://github.com/cocoapods/specs.git",
+                            },
+                            "name": "KSCrash/Recording",
+                            "version": "1.15.18",
+                          },
+                          "KSCrash/Reporting/Filters/Base": Object {
+                            "dependencies": Object {
+                              "KSCrash/Recording": Object {
+                                "dependencies": Object {
+                                  "KSCrash/Recording/Tools": Object {
+                                    "labels": Object {
+                                      "checksum": "5394936f41e5c1ef7b79cf79b30d53299b0c160e",
+                                      "repository": "https://github.com/cocoapods/specs.git",
+                                    },
+                                    "name": "KSCrash/Recording/Tools",
+                                    "version": "1.15.18",
+                                  },
+                                },
+                                "labels": Object {
+                                  "checksum": "5394936f41e5c1ef7b79cf79b30d53299b0c160e",
+                                  "repository": "https://github.com/cocoapods/specs.git",
+                                },
+                                "name": "KSCrash/Recording",
+                                "version": "1.15.18",
+                              },
+                            },
+                            "labels": Object {
+                              "checksum": "5394936f41e5c1ef7b79cf79b30d53299b0c160e",
+                              "repository": "https://github.com/cocoapods/specs.git",
+                            },
+                            "name": "KSCrash/Reporting/Filters/Base",
+                            "version": "1.15.18",
+                          },
+                        },
+                        "labels": Object {
+                          "checksum": "5394936f41e5c1ef7b79cf79b30d53299b0c160e",
+                          "repository": "https://github.com/cocoapods/specs.git",
+                        },
+                        "name": "KSCrash/Reporting/Filters/Basic",
+                        "version": "1.15.18",
+                      },
+                    },
+                    "labels": Object {
+                      "checksum": "5394936f41e5c1ef7b79cf79b30d53299b0c160e",
+                      "repository": "https://github.com/cocoapods/specs.git",
+                    },
+                    "name": "KSCrash/Core",
+                    "version": "1.15.18",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "e2707f9a6b498277d9620a48fcb1bd3b655c8473",
+                  "repository": "https://github.com/cocoapods/specs.git",
+                },
+                "name": "Sentry/KSCrash",
+                "version": "3.9.1",
+              },
+            },
+            "labels": Object {
+              "checkoutOptionsGit": "https://github.com/getsentry/react-native-sentry.git",
+              "checkoutOptionsTag": "v0.30.3",
+              "checksum": "3dff4e9bd82aa581dc64ff8d2524d7007cea076b",
+              "externalSourceGit": "https://github.com/getsentry/react-native-sentry.git",
+              "externalSourceTag": "v0.30.3",
+            },
+            "name": "SentryReactNative",
+            "version": "0.30.3",
+          },
+          "glog": Object {
+            "labels": Object {
+              "checksum": "affb802cb73dc1156005a5fb19085008bf6ffd52",
+              "externalSourcePodspec": "./externals/glog/glog.podspec",
+            },
+            "name": "glog",
+            "version": "0.3.5",
+          },
+          "react-native-cameraroll": Object {
+            "dependencies": Object {
+              "React": Object {
+                "dependencies": Object {
+                  "React/Core": Object {
+                    "dependencies": Object {
+                      "yoga": Object {
+                        "labels": Object {
+                          "checksum": "4ce3811b3db5f47fe1e125f15383003316a616b8",
+                          "repository": "https://github.com/artsy/Specs.git",
+                        },
+                        "name": "yoga",
+                        "version": "0.59.2.React",
+                      },
+                    },
+                    "labels": Object {
+                      "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "React/Core",
+                    "version": "0.59.2",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "React",
+                "version": "0.59.2",
+              },
+            },
+            "labels": Object {
+              "checkoutOptionsGit": "https://github.com/react-native-community/react-native-cameraroll",
+              "checkoutOptionsTag": "v1.0.5",
+              "checksum": "b1faef9f2ea27b07bdf818b8043909a93f797eca",
+              "externalSourceGit": "https://github.com/react-native-community/react-native-cameraroll",
+              "externalSourceTag": "v1.0.5",
+            },
+            "name": "react-native-cameraroll",
+            "version": "1.0.5",
+          },
+          "react-native-mapbox-gl": Object {
+            "dependencies": Object {
+              "React": Object {
+                "dependencies": Object {
+                  "React/Core": Object {
+                    "dependencies": Object {
+                      "yoga": Object {
+                        "labels": Object {
+                          "checksum": "4ce3811b3db5f47fe1e125f15383003316a616b8",
+                          "repository": "https://github.com/artsy/Specs.git",
+                        },
+                        "name": "yoga",
+                        "version": "0.59.2.React",
+                      },
+                    },
+                    "labels": Object {
+                      "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "React/Core",
+                    "version": "0.59.2",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "React",
+                "version": "0.59.2",
+              },
+            },
+            "labels": Object {
+              "checkoutOptionsCommit": "8ad2d3a2207da62024c82624c71df5bf5dabc126",
+              "checkoutOptionsGit": "https://github.com/l2succes/react-native-mapbox-gl",
+              "checksum": "b7309e99290963cc7fe0e34db86c6e16890cfcee",
+              "externalSourceBranch": "fix-gesture-recognizer",
+              "externalSourceGit": "https://github.com/l2succes/react-native-mapbox-gl",
+            },
+            "name": "react-native-mapbox-gl",
+            "version": "6.1.4",
+          },
+          "react-native-navigator-ios": Object {
+            "dependencies": Object {
+              "React": Object {
+                "dependencies": Object {
+                  "React/Core": Object {
+                    "dependencies": Object {
+                      "yoga": Object {
+                        "labels": Object {
+                          "checksum": "4ce3811b3db5f47fe1e125f15383003316a616b8",
+                          "repository": "https://github.com/artsy/Specs.git",
+                        },
+                        "name": "yoga",
+                        "version": "0.59.2.React",
+                      },
+                    },
+                    "labels": Object {
+                      "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "React/Core",
+                    "version": "0.59.2",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "React",
+                "version": "0.59.2",
+              },
+            },
+            "labels": Object {
+              "checkoutOptionsCommit": "695725296669114ceeed76bba218fd91cde381c1",
+              "checkoutOptionsGit": "https://github.com/ashfurrow/react-native-navigator-ios",
+              "checksum": "93db84cc26b6f8d776e1f504c56082f593efcd09",
+              "externalSourceBranch": "license_podspec",
+              "externalSourceGit": "https://github.com/ashfurrow/react-native-navigator-ios",
+            },
+            "name": "react-native-navigator-ios",
+            "version": "1.0.0",
+          },
+          "tipsi-stripe": Object {
+            "dependencies": Object {
+              "React": Object {
+                "dependencies": Object {
+                  "React/Core": Object {
+                    "dependencies": Object {
+                      "yoga": Object {
+                        "labels": Object {
+                          "checksum": "4ce3811b3db5f47fe1e125f15383003316a616b8",
+                          "repository": "https://github.com/artsy/Specs.git",
+                        },
+                        "name": "yoga",
+                        "version": "0.59.2.React",
+                      },
+                    },
+                    "labels": Object {
+                      "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "React/Core",
+                    "version": "0.59.2",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "React",
+                "version": "0.59.2",
+              },
+              "Stripe": Object {
+                "labels": Object {
+                  "checksum": "db29ad197c74aca6fb981e4e8355cf7ebd0fca5a",
+                  "repository": "https://github.com/cocoapods/specs.git",
+                },
+                "name": "Stripe",
+                "version": "14.0.0",
+              },
+            },
+            "labels": Object {
+              "checkoutOptionsCommit": "bfebb733fb44d3e1d0522a38a317993f9c686422",
+              "checkoutOptionsGit": "https://github.com/ashfurrow/tipsi-stripe.git",
+              "checksum": "2d0e33b5bb62168cd1f1777a904781725c5baf8a",
+              "externalSourceBranch": "fix-infinite-loop",
+              "externalSourceGit": "https://github.com/ashfurrow/tipsi-stripe.git",
+            },
+            "name": "tipsi-stripe",
+            "version": "7.5.0",
+          },
+          "yoga": Object {
+            "labels": Object {
+              "checksum": "4ce3811b3db5f47fe1e125f15383003316a616b8",
+              "repository": "https://github.com/artsy/Specs.git",
+            },
+            "name": "yoga",
+            "version": "0.59.2.React",
+          },
+        },
+        "labels": Object {
+          "checksum": "a9aa4635d234c36031a812a2280a1ff8ebc9c74d",
+          "repository": "https://github.com/artsy/Specs.git",
+        },
+        "name": "Emission",
+        "version": "1.12.11",
+      },
+      "Expecta": Object {
+        "labels": Object {
+          "checksum": "e1c022fcd33910b6be89c291d2775b3fe27a89fe",
+          "repository": "https://github.com/cocoapods/specs.git",
+        },
+        "name": "Expecta",
+        "version": "1.0.5",
+      },
+      "Expecta+Snapshots": Object {
+        "dependencies": Object {
+          "Expecta": Object {
+            "labels": Object {
+              "checksum": "e1c022fcd33910b6be89c291d2775b3fe27a89fe",
+              "repository": "https://github.com/cocoapods/specs.git",
+            },
+            "name": "Expecta",
+            "version": "1.0.5",
+          },
+          "FBSnapshotTestCase/Core": Object {
+            "labels": Object {
+              "checksum": "094f9f314decbabe373b87cc339bea235a63e07a",
+              "repository": "https://github.com/cocoapods/specs.git",
+            },
+            "name": "FBSnapshotTestCase/Core",
+            "version": "2.1.4",
+          },
+          "Specta": Object {
+            "labels": Object {
+              "checksum": "ac94d110b865115fe60ff2c6d7281053c6f8e8a2",
+              "repository": "https://github.com/cocoapods/specs.git",
+            },
+            "name": "Specta",
+            "version": "1.0.5",
+          },
+        },
+        "labels": Object {
+          "checksum": "c343f410c7a6392f3e22e78f94c44b6c0749a516",
+          "repository": "https://github.com/cocoapods/specs.git",
+        },
+        "name": "Expecta+Snapshots",
+        "version": "3.0.0",
+      },
+      "Extraction": Object {
+        "dependencies": Object {
+          "Extraction/ARAnimationContinuation": Object {
+            "labels": Object {
+              "checksum": "642a73b8ccc7806e9a7daf95ebb4c14c374829f1",
+              "repository": "https://github.com/artsy/Specs.git",
+            },
+            "name": "Extraction/ARAnimationContinuation",
+            "version": "1.2.4",
+          },
+          "Extraction/ARLoadFailureView": Object {
+            "dependencies": Object {
+              "Artsy-UIButtons": Object {
+                "dependencies": Object {
+                  "Artsy+UIColors": Object {
+                    "labels": Object {
+                      "checksum": "31c03c4146f5e6618a9b950f37dfe02dd9ac09a6",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "Artsy+UIColors",
+                    "version": "3.1.0",
+                  },
+                  "Artsy+UIFonts": Object {
+                    "labels": Object {
+                      "checksum": "597c44f264aead6bdc21898b690addd90e14edbd",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "Artsy+UIFonts",
+                    "version": "3.3.3",
+                  },
+                  "UIView+BooleanAnimations": Object {
+                    "labels": Object {
+                      "checksum": "a760be9a066036e55f298b7b7350a6cb14cfcd97",
+                      "repository": "https://github.com/cocoapods/specs.git",
+                    },
+                    "name": "UIView+BooleanAnimations",
+                    "version": "1.0.2",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "3c396f0fad352a7b0332100e0ffcb0ca577e0082",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "Artsy-UIButtons",
+                "version": "2.3.3",
+              },
+              "Extraction/UILabel+Typography": Object {
+                "labels": Object {
+                  "checksum": "642a73b8ccc7806e9a7daf95ebb4c14c374829f1",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "Extraction/UILabel+Typography",
+                "version": "1.2.4",
+              },
+              "ORStackView": Object {
+                "dependencies": Object {
+                  "FLKAutoLayout": Object {
+                    "labels": Object {
+                      "checkoutOptionsCommit": "4aa27fa1a9aba36d5465e6cd181ba4b78b0691d3",
+                      "checkoutOptionsGit": "https://github.com/orta/FLKAutoLayout.git",
+                      "checksum": "106b14dbae09d32c6730190f4e78a959759ba4a4",
+                      "externalSourceBranch": "v1",
+                      "externalSourceGit": "https://github.com/orta/FLKAutoLayout.git",
+                    },
+                    "name": "FLKAutoLayout",
+                    "version": "1.0.0",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "b9507271cb41fb9e0b3eecc6414d831201e7cf7c",
+                  "repository": "https://github.com/cocoapods/specs.git",
+                },
+                "name": "ORStackView",
+                "version": "2.0.3",
+              },
+            },
+            "labels": Object {
+              "checksum": "642a73b8ccc7806e9a7daf95ebb4c14c374829f1",
+              "repository": "https://github.com/artsy/Specs.git",
+            },
+            "name": "Extraction/ARLoadFailureView",
+            "version": "1.2.4",
+          },
+          "Extraction/ARSpinner": Object {
+            "dependencies": Object {
+              "Extraction/UIView+ARSpinner": Object {
+                "dependencies": Object {
+                  "Extraction/ARAnimationContinuation": Object {
+                    "labels": Object {
+                      "checksum": "642a73b8ccc7806e9a7daf95ebb4c14c374829f1",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "Extraction/ARAnimationContinuation",
+                    "version": "1.2.4",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "642a73b8ccc7806e9a7daf95ebb4c14c374829f1",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "Extraction/UIView+ARSpinner",
+                "version": "1.2.4",
+              },
+              "UIView+BooleanAnimations": Object {
+                "labels": Object {
+                  "checksum": "a760be9a066036e55f298b7b7350a6cb14cfcd97",
+                  "repository": "https://github.com/cocoapods/specs.git",
+                },
+                "name": "UIView+BooleanAnimations",
+                "version": "1.0.2",
+              },
+            },
+            "labels": Object {
+              "checksum": "642a73b8ccc7806e9a7daf95ebb4c14c374829f1",
+              "repository": "https://github.com/artsy/Specs.git",
+            },
+            "name": "Extraction/ARSpinner",
+            "version": "1.2.4",
+          },
+          "Extraction/ARSwitchView": Object {
+            "dependencies": Object {
+              "Artsy+UIColors": Object {
+                "labels": Object {
+                  "checksum": "31c03c4146f5e6618a9b950f37dfe02dd9ac09a6",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "Artsy+UIColors",
+                "version": "3.1.0",
+              },
+              "Artsy+UIFonts": Object {
+                "labels": Object {
+                  "checksum": "597c44f264aead6bdc21898b690addd90e14edbd",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "Artsy+UIFonts",
+                "version": "3.3.3",
+              },
+              "FLKAutoLayout": Object {
+                "labels": Object {
+                  "checkoutOptionsCommit": "4aa27fa1a9aba36d5465e6cd181ba4b78b0691d3",
+                  "checkoutOptionsGit": "https://github.com/orta/FLKAutoLayout.git",
+                  "checksum": "106b14dbae09d32c6730190f4e78a959759ba4a4",
+                  "externalSourceBranch": "v1",
+                  "externalSourceGit": "https://github.com/orta/FLKAutoLayout.git",
+                },
+                "name": "FLKAutoLayout",
+                "version": "1.0.0",
+              },
+              "UIView+BooleanAnimations": Object {
+                "labels": Object {
+                  "checksum": "a760be9a066036e55f298b7b7350a6cb14cfcd97",
+                  "repository": "https://github.com/cocoapods/specs.git",
+                },
+                "name": "UIView+BooleanAnimations",
+                "version": "1.0.2",
+              },
+            },
+            "labels": Object {
+              "checksum": "642a73b8ccc7806e9a7daf95ebb4c14c374829f1",
+              "repository": "https://github.com/artsy/Specs.git",
+            },
+            "name": "Extraction/ARSwitchView",
+            "version": "1.2.4",
+          },
+          "Extraction/UILabel+Typography": Object {
+            "labels": Object {
+              "checksum": "642a73b8ccc7806e9a7daf95ebb4c14c374829f1",
+              "repository": "https://github.com/artsy/Specs.git",
+            },
+            "name": "Extraction/UILabel+Typography",
+            "version": "1.2.4",
+          },
+          "Extraction/UIView+ARSpinner": Object {
+            "dependencies": Object {
+              "Extraction/ARAnimationContinuation": Object {
+                "labels": Object {
+                  "checksum": "642a73b8ccc7806e9a7daf95ebb4c14c374829f1",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "Extraction/ARAnimationContinuation",
+                "version": "1.2.4",
+              },
+            },
+            "labels": Object {
+              "checksum": "642a73b8ccc7806e9a7daf95ebb4c14c374829f1",
+              "repository": "https://github.com/artsy/Specs.git",
+            },
+            "name": "Extraction/UIView+ARSpinner",
+            "version": "1.2.4",
+          },
+        },
+        "labels": Object {
+          "checksum": "642a73b8ccc7806e9a7daf95ebb4c14c374829f1",
+          "repository": "https://github.com/artsy/Specs.git",
+        },
+        "name": "Extraction",
+        "version": "1.2.4",
+      },
+      "FBSDKCoreKit": Object {
+        "dependencies": Object {
+          "Bolts": Object {
+            "dependencies": Object {
+              "Bolts/AppLinks": Object {
+                "dependencies": Object {
+                  "Bolts/Tasks": Object {
+                    "labels": Object {
+                      "checksum": "ac6567323eac61e203f6a9763667d0f711be34c8",
+                      "repository": "https://github.com/cocoapods/specs.git",
+                    },
+                    "name": "Bolts/Tasks",
+                    "version": "1.9.0",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "ac6567323eac61e203f6a9763667d0f711be34c8",
+                  "repository": "https://github.com/cocoapods/specs.git",
+                },
+                "name": "Bolts/AppLinks",
+                "version": "1.9.0",
+              },
+              "Bolts/Tasks": Object {
+                "labels": Object {
+                  "checksum": "ac6567323eac61e203f6a9763667d0f711be34c8",
+                  "repository": "https://github.com/cocoapods/specs.git",
+                },
+                "name": "Bolts/Tasks",
+                "version": "1.9.0",
+              },
+            },
+            "labels": Object {
+              "checksum": "ac6567323eac61e203f6a9763667d0f711be34c8",
+              "repository": "https://github.com/cocoapods/specs.git",
+            },
+            "name": "Bolts",
+            "version": "1.9.0",
+          },
+        },
+        "labels": Object {
+          "checksum": "fe5f3474499a81963e11e3f3a5c753d0a95ca2b4",
+          "repository": "https://github.com/cocoapods/specs.git",
+        },
+        "name": "FBSDKCoreKit",
+        "version": "4.37.0",
+      },
+      "FBSDKLoginKit": Object {
+        "dependencies": Object {
+          "FBSDKCoreKit": Object {
+            "dependencies": Object {
+              "Bolts": Object {
+                "dependencies": Object {
+                  "Bolts/AppLinks": Object {
+                    "dependencies": Object {
+                      "Bolts/Tasks": Object {
+                        "labels": Object {
+                          "checksum": "ac6567323eac61e203f6a9763667d0f711be34c8",
+                          "repository": "https://github.com/cocoapods/specs.git",
+                        },
+                        "name": "Bolts/Tasks",
+                        "version": "1.9.0",
+                      },
+                    },
+                    "labels": Object {
+                      "checksum": "ac6567323eac61e203f6a9763667d0f711be34c8",
+                      "repository": "https://github.com/cocoapods/specs.git",
+                    },
+                    "name": "Bolts/AppLinks",
+                    "version": "1.9.0",
+                  },
+                  "Bolts/Tasks": Object {
+                    "labels": Object {
+                      "checksum": "ac6567323eac61e203f6a9763667d0f711be34c8",
+                      "repository": "https://github.com/cocoapods/specs.git",
+                    },
+                    "name": "Bolts/Tasks",
+                    "version": "1.9.0",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "ac6567323eac61e203f6a9763667d0f711be34c8",
+                  "repository": "https://github.com/cocoapods/specs.git",
+                },
+                "name": "Bolts",
+                "version": "1.9.0",
+              },
+            },
+            "labels": Object {
+              "checksum": "fe5f3474499a81963e11e3f3a5c753d0a95ca2b4",
+              "repository": "https://github.com/cocoapods/specs.git",
+            },
+            "name": "FBSDKCoreKit",
+            "version": "4.37.0",
+          },
+        },
+        "labels": Object {
+          "checksum": "2f7249686d1e30ce8a5ef5400eedf50b3e3df332",
+          "repository": "https://github.com/cocoapods/specs.git",
+        },
+        "name": "FBSDKLoginKit",
+        "version": "4.37.0",
+      },
+      "FBSnapshotTestCase": Object {
+        "dependencies": Object {
+          "FBSnapshotTestCase/SwiftSupport": Object {
+            "dependencies": Object {
+              "FBSnapshotTestCase/Core": Object {
+                "labels": Object {
+                  "checksum": "094f9f314decbabe373b87cc339bea235a63e07a",
+                  "repository": "https://github.com/cocoapods/specs.git",
+                },
+                "name": "FBSnapshotTestCase/Core",
+                "version": "2.1.4",
+              },
+            },
+            "labels": Object {
+              "checksum": "094f9f314decbabe373b87cc339bea235a63e07a",
+              "repository": "https://github.com/cocoapods/specs.git",
+            },
+            "name": "FBSnapshotTestCase/SwiftSupport",
+            "version": "2.1.4",
+          },
+        },
+        "labels": Object {
+          "checksum": "094f9f314decbabe373b87cc339bea235a63e07a",
+          "repository": "https://github.com/cocoapods/specs.git",
+        },
+        "name": "FBSnapshotTestCase",
+        "version": "2.1.4",
+      },
+      "FLKAutoLayout": Object {
+        "labels": Object {
+          "checkoutOptionsCommit": "4aa27fa1a9aba36d5465e6cd181ba4b78b0691d3",
+          "checkoutOptionsGit": "https://github.com/orta/FLKAutoLayout.git",
+          "checksum": "106b14dbae09d32c6730190f4e78a959759ba4a4",
+          "externalSourceBranch": "v1",
+          "externalSourceGit": "https://github.com/orta/FLKAutoLayout.git",
+        },
+        "name": "FLKAutoLayout",
+        "version": "1.0.0",
+      },
+      "FXBlurView": Object {
+        "labels": Object {
+          "checksum": "5121730176fd52bcf7bffd0bd8c1485e8aabc3cb",
+          "repository": "https://github.com/cocoapods/specs.git",
+        },
+        "name": "FXBlurView",
+        "version": "1.6.1",
+      },
+      "Forgeries/Mocks": Object {
+        "dependencies": Object {
+          "Forgeries/Core": Object {
+            "labels": Object {
+              "checksum": "64ced144ea8341d89a7eec9d1d7986f0f1366250",
+              "repository": "https://github.com/cocoapods/specs.git",
+            },
+            "name": "Forgeries/Core",
+            "version": "1.0.0",
+          },
+          "OCMock": Object {
+            "labels": Object {
+              "checksum": "a6a7dc0e3997fb9f35d99f72528698ebf60d64f2",
+              "repository": "https://github.com/cocoapods/specs.git",
+            },
+            "name": "OCMock",
+            "version": "2.2.4",
+          },
+        },
+        "labels": Object {
+          "checksum": "64ced144ea8341d89a7eec9d1d7986f0f1366250",
+          "repository": "https://github.com/cocoapods/specs.git",
+        },
+        "name": "Forgeries/Mocks",
+        "version": "1.0.0",
+      },
+      "ISO8601DateFormatter": Object {
+        "labels": Object {
+          "checkoutOptionsCommit": "1a48b819c85903ded669e74e476aceffebf311fc",
+          "checkoutOptionsGit": "https://github.com/orta/iso-8601-date-formatter",
+          "checksum": "8311a2d4e265b269b2fed7ab4db685dcb0a7ccb2",
+          "externalSourceGit": "https://github.com/orta/iso-8601-date-formatter",
+        },
+        "name": "ISO8601DateFormatter",
+        "version": "0.7.1",
+      },
+      "Interstellar/Core": Object {
+        "labels": Object {
+          "checkoutOptionsCommit": "ca22646f5a8449795fba3d3436a045da0aeb5949",
+          "checkoutOptionsGit": "https://github.com/ashfurrow/Interstellar.git",
+          "checksum": "ab67502af03105f92100a043e178d188a1a437c9",
+          "externalSourceBranch": "observable-unsubscribe",
+          "externalSourceGit": "https://github.com/ashfurrow/Interstellar.git",
+        },
+        "name": "Interstellar/Core",
+        "version": "2.0.0",
+      },
+      "JLRoutes": Object {
+        "labels": Object {
+          "checkoutOptionsCommit": "5a6df1a795766a4d3e586508e86ec9271d3ef3d9",
+          "checkoutOptionsGit": "https://github.com/orta/JLRoutes.git",
+          "checksum": "63d64c28b26bcdeb5f5b29e436f75b8358e8d6d1",
+          "externalSourceGit": "https://github.com/orta/JLRoutes.git",
+        },
+        "name": "JLRoutes",
+        "version": "2.0.0",
+      },
+      "JSDecoupledAppDelegate": Object {
+        "labels": Object {
+          "checksum": "5905e144cbe6e0c889248eebbee6784510f315e1",
+          "repository": "https://github.com/cocoapods/specs.git",
+        },
+        "name": "JSDecoupledAppDelegate",
+        "version": "1.2.0",
+      },
+      "JWTDecode": Object {
+        "labels": Object {
+          "checksum": "178e47e5d28d3abcff778bacced8342858cd6cb5",
+          "repository": "https://github.com/cocoapods/specs.git",
+        },
+        "name": "JWTDecode",
+        "version": "2.0.0",
+      },
+      "KSDeferred": Object {
+        "labels": Object {
+          "checksum": "e72d005162986b2978e1e2eee17fbce1c6876cfe",
+          "repository": "https://github.com/cocoapods/specs.git",
+        },
+        "name": "KSDeferred",
+        "version": "0.2.0",
+      },
+      "Keys": Object {
+        "labels": Object {
+          "checksum": "af65e23feef2a047b3277b1ef0399f1209ef9d46",
+          "externalSourcePath": "Pods/CocoaPodsKeys",
+        },
+        "name": "Keys",
+        "version": "1.0.0",
+      },
+      "MARKRangeSlider": Object {
+        "labels": Object {
+          "checksum": "dbf0878b03e921b52e4ef1e7766c1a8affb0c577",
+          "repository": "https://github.com/cocoapods/specs.git",
+        },
+        "name": "MARKRangeSlider",
+        "version": "1.0.1",
+      },
+      "MMMarkdown": Object {
+        "labels": Object {
+          "checksum": "44f1c5216cfcd70bc0e076b0f91876d6323a73b8",
+          "repository": "https://github.com/cocoapods/specs.git",
+        },
+        "name": "MMMarkdown",
+        "version": "0.4",
+      },
+      "Mantle": Object {
+        "dependencies": Object {
+          "Mantle/extobjc": Object {
+            "labels": Object {
+              "checksum": "a197db93e0f1e36194b1fdbc078219a8492eaef2",
+              "repository": "https://github.com/cocoapods/specs.git",
+            },
+            "name": "Mantle/extobjc",
+            "version": "1.5.6",
+          },
+        },
+        "labels": Object {
+          "checksum": "a197db93e0f1e36194b1fdbc078219a8492eaef2",
+          "repository": "https://github.com/cocoapods/specs.git",
+        },
+        "name": "Mantle",
+        "version": "1.5.6",
+      },
+      "MultiDelegate": Object {
+        "labels": Object {
+          "checksum": "d224a4af1c098e1de280c3eaee2f16ebf8b046f4",
+          "repository": "https://github.com/cocoapods/specs.git",
+        },
+        "name": "MultiDelegate",
+        "version": "0.0.2",
+      },
+      "NPKeyboardLayoutGuide": Object {
+        "labels": Object {
+          "checksum": "fea27700582570c8825a97b5cb96579a57bf0b73",
+          "repository": "https://github.com/cocoapods/specs.git",
+        },
+        "name": "NPKeyboardLayoutGuide",
+        "version": "1.0.0",
+      },
+      "Nimble": Object {
+        "labels": Object {
+          "checksum": "051e3d8912d40138fa5591c78594f95fb172af37",
+          "repository": "https://github.com/cocoapods/specs.git",
+        },
+        "name": "Nimble",
+        "version": "7.3.4",
+      },
+      "Nimble-Snapshots": Object {
+        "dependencies": Object {
+          "Nimble-Snapshots/Core": Object {
+            "dependencies": Object {
+              "FBSnapshotTestCase": Object {
+                "dependencies": Object {
+                  "FBSnapshotTestCase/SwiftSupport": Object {
+                    "dependencies": Object {
+                      "FBSnapshotTestCase/Core": Object {
+                        "labels": Object {
+                          "checksum": "094f9f314decbabe373b87cc339bea235a63e07a",
+                          "repository": "https://github.com/cocoapods/specs.git",
+                        },
+                        "name": "FBSnapshotTestCase/Core",
+                        "version": "2.1.4",
+                      },
+                    },
+                    "labels": Object {
+                      "checksum": "094f9f314decbabe373b87cc339bea235a63e07a",
+                      "repository": "https://github.com/cocoapods/specs.git",
+                    },
+                    "name": "FBSnapshotTestCase/SwiftSupport",
+                    "version": "2.1.4",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "094f9f314decbabe373b87cc339bea235a63e07a",
+                  "repository": "https://github.com/cocoapods/specs.git",
+                },
+                "name": "FBSnapshotTestCase",
+                "version": "2.1.4",
+              },
+              "Nimble": Object {
+                "labels": Object {
+                  "checksum": "051e3d8912d40138fa5591c78594f95fb172af37",
+                  "repository": "https://github.com/cocoapods/specs.git",
+                },
+                "name": "Nimble",
+                "version": "7.3.4",
+              },
+            },
+            "labels": Object {
+              "checksum": "f5459b5b091678dc942d03ec4741cacb58ba4a52",
+              "repository": "https://github.com/cocoapods/specs.git",
+            },
+            "name": "Nimble-Snapshots/Core",
+            "version": "6.3.0",
+          },
+        },
+        "labels": Object {
+          "checksum": "f5459b5b091678dc942d03ec4741cacb58ba4a52",
+          "repository": "https://github.com/cocoapods/specs.git",
+        },
+        "name": "Nimble-Snapshots",
+        "version": "6.3.0",
+      },
+      "OCMock": Object {
+        "labels": Object {
+          "checksum": "a6a7dc0e3997fb9f35d99f72528698ebf60d64f2",
+          "repository": "https://github.com/cocoapods/specs.git",
+        },
+        "name": "OCMock",
+        "version": "2.2.4",
+      },
+      "OHHTTPStubs": Object {
+        "labels": Object {
+          "checksum": "c93230597bc5c8b74bcfdb403cc8773515b8b08c",
+          "repository": "https://github.com/cocoapods/specs.git",
+        },
+        "name": "OHHTTPStubs",
+        "version": "3.1.2",
+      },
+      "ORKeyboardReactingApplication": Object {
+        "labels": Object {
+          "checksum": "05af5ead40af968d5423d54b6a0dc050858b0e82",
+          "repository": "https://github.com/cocoapods/specs.git",
+        },
+        "name": "ORKeyboardReactingApplication",
+        "version": "0.5.3",
+      },
+      "ORStackView": Object {
+        "dependencies": Object {
+          "FLKAutoLayout": Object {
+            "labels": Object {
+              "checkoutOptionsCommit": "4aa27fa1a9aba36d5465e6cd181ba4b78b0691d3",
+              "checkoutOptionsGit": "https://github.com/orta/FLKAutoLayout.git",
+              "checksum": "106b14dbae09d32c6730190f4e78a959759ba4a4",
+              "externalSourceBranch": "v1",
+              "externalSourceGit": "https://github.com/orta/FLKAutoLayout.git",
+            },
+            "name": "FLKAutoLayout",
+            "version": "1.0.0",
+          },
+        },
+        "labels": Object {
+          "checksum": "b9507271cb41fb9e0b3eecc6414d831201e7cf7c",
+          "repository": "https://github.com/cocoapods/specs.git",
+        },
+        "name": "ORStackView",
+        "version": "2.0.3",
+      },
+      "ObjectiveSugar": Object {
+        "labels": Object {
+          "checksum": "a6a25f23d657c19df0a0b972466d5b5ca9f5295c",
+          "repository": "https://github.com/cocoapods/specs.git",
+        },
+        "name": "ObjectiveSugar",
+        "version": "1.1.0",
+      },
+      "Pulley": Object {
+        "labels": Object {
+          "checkoutOptionsCommit": "23f1c0e8cad5a72d03176fe33535c14726e7a160",
+          "checkoutOptionsGit": "https://github.com/l2succes/Pulley.git",
+          "checksum": "2679a2b5a9714c5eb760b1fbb535d15c60e50fb4",
+          "externalSourceBranch": "master",
+          "externalSourceGit": "https://github.com/l2succes/Pulley.git",
+        },
+        "name": "Pulley",
+        "version": "2.6.2",
+      },
+      "Quick": Object {
+        "labels": Object {
+          "checksum": "ce1276c7c27ba2da3cb2fd0cde053c3648b3b22d",
+          "repository": "https://github.com/cocoapods/specs.git",
+        },
+        "name": "Quick",
+        "version": "2.0.0",
+      },
+      "RNSVG": Object {
+        "dependencies": Object {
+          "React": Object {
+            "dependencies": Object {
+              "React/Core": Object {
+                "dependencies": Object {
+                  "yoga": Object {
+                    "labels": Object {
+                      "checksum": "4ce3811b3db5f47fe1e125f15383003316a616b8",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "yoga",
+                    "version": "0.59.2.React",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "React/Core",
+                "version": "0.59.2",
+              },
+            },
+            "labels": Object {
+              "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+              "repository": "https://github.com/artsy/Specs.git",
+            },
+            "name": "React",
+            "version": "0.59.2",
+          },
+        },
+        "labels": Object {
+          "checkoutOptionsGit": "https://github.com/react-native-community/react-native-svg.git",
+          "checkoutOptionsTag": "v9.4.0",
+          "checksum": "9cb6e958c4b6a1f58185ac72a350b148947d6fed",
+          "externalSourceGit": "https://github.com/react-native-community/react-native-svg.git",
+          "externalSourceTag": "v9.4.0",
+        },
+        "name": "RNSVG",
+        "version": "9.4.0",
+      },
+      "React/Core": Object {
+        "dependencies": Object {
+          "yoga": Object {
+            "labels": Object {
+              "checksum": "4ce3811b3db5f47fe1e125f15383003316a616b8",
+              "repository": "https://github.com/artsy/Specs.git",
+            },
+            "name": "yoga",
+            "version": "0.59.2.React",
+          },
+        },
+        "labels": Object {
+          "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+          "repository": "https://github.com/artsy/Specs.git",
+        },
+        "name": "React/Core",
+        "version": "0.59.2",
+      },
+      "React/DevSupport": Object {
+        "dependencies": Object {
+          "React/Core": Object {
+            "dependencies": Object {
+              "yoga": Object {
+                "labels": Object {
+                  "checksum": "4ce3811b3db5f47fe1e125f15383003316a616b8",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "yoga",
+                "version": "0.59.2.React",
+              },
+            },
+            "labels": Object {
+              "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+              "repository": "https://github.com/artsy/Specs.git",
+            },
+            "name": "React/Core",
+            "version": "0.59.2",
+          },
+          "React/RCTWebSocket": Object {
+            "dependencies": Object {
+              "React/Core": Object {
+                "dependencies": Object {
+                  "yoga": Object {
+                    "labels": Object {
+                      "checksum": "4ce3811b3db5f47fe1e125f15383003316a616b8",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "yoga",
+                    "version": "0.59.2.React",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "React/Core",
+                "version": "0.59.2",
+              },
+              "React/RCTBlob": Object {
+                "dependencies": Object {
+                  "React/Core": Object {
+                    "dependencies": Object {
+                      "yoga": Object {
+                        "labels": Object {
+                          "checksum": "4ce3811b3db5f47fe1e125f15383003316a616b8",
+                          "repository": "https://github.com/artsy/Specs.git",
+                        },
+                        "name": "yoga",
+                        "version": "0.59.2.React",
+                      },
+                    },
+                    "labels": Object {
+                      "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "React/Core",
+                    "version": "0.59.2",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "React/RCTBlob",
+                "version": "0.59.2",
+              },
+              "React/fishhook": Object {
+                "labels": Object {
+                  "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "React/fishhook",
+                "version": "0.59.2",
+              },
+            },
+            "labels": Object {
+              "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+              "repository": "https://github.com/artsy/Specs.git",
+            },
+            "name": "React/RCTWebSocket",
+            "version": "0.59.2",
+          },
+        },
+        "labels": Object {
+          "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+          "repository": "https://github.com/artsy/Specs.git",
+        },
+        "name": "React/DevSupport",
+        "version": "0.59.2",
+      },
+      "ReactiveObjC": Object {
+        "labels": Object {
+          "checksum": "7b6782ae39f9ac0f57205c3b0c0b69b9dd7048c0",
+          "repository": "https://github.com/cocoapods/specs.git",
+        },
+        "name": "ReactiveObjC",
+        "version": "2.1.2",
+      },
+      "SDWebImage": Object {
+        "dependencies": Object {
+          "SDWebImage/Core": Object {
+            "labels": Object {
+              "checksum": "1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84",
+              "repository": "https://github.com/cocoapods/specs.git",
+            },
+            "name": "SDWebImage/Core",
+            "version": "3.7.3",
+          },
+        },
+        "labels": Object {
+          "checksum": "1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84",
+          "repository": "https://github.com/cocoapods/specs.git",
+        },
+        "name": "SDWebImage",
+        "version": "3.7.3",
+      },
+      "SSFadingScrollView": Object {
+        "labels": Object {
+          "checkoutOptionsCommit": "3920e3582e46c9fe23b0d1200e28614ebd66d801",
+          "checkoutOptionsGit": "https://github.com/alloy/SSFadingScrollView.git",
+          "checksum": "a2f142312afad23585e354a41a6ed337045e1aa3",
+          "externalSourceBranch": "add-axial-support",
+          "externalSourceGit": "https://github.com/alloy/SSFadingScrollView.git",
+        },
+        "name": "SSFadingScrollView",
+        "version": "1.1.0",
+      },
+      "SentryReactNative": Object {
+        "dependencies": Object {
+          "React": Object {
+            "dependencies": Object {
+              "React/Core": Object {
+                "dependencies": Object {
+                  "yoga": Object {
+                    "labels": Object {
+                      "checksum": "4ce3811b3db5f47fe1e125f15383003316a616b8",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "yoga",
+                    "version": "0.59.2.React",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "React/Core",
+                "version": "0.59.2",
+              },
+            },
+            "labels": Object {
+              "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+              "repository": "https://github.com/artsy/Specs.git",
+            },
+            "name": "React",
+            "version": "0.59.2",
+          },
+          "Sentry": Object {
+            "dependencies": Object {
+              "Sentry/Core": Object {
+                "labels": Object {
+                  "checksum": "e2707f9a6b498277d9620a48fcb1bd3b655c8473",
+                  "repository": "https://github.com/cocoapods/specs.git",
+                },
+                "name": "Sentry/Core",
+                "version": "3.9.1",
+              },
+              "Sentry/KSCrash": Object {
+                "dependencies": Object {
+                  "KSCrash/Core": Object {
+                    "dependencies": Object {
+                      "KSCrash/Reporting/Filters/Basic": Object {
+                        "dependencies": Object {
+                          "KSCrash/Recording": Object {
+                            "dependencies": Object {
+                              "KSCrash/Recording/Tools": Object {
+                                "labels": Object {
+                                  "checksum": "5394936f41e5c1ef7b79cf79b30d53299b0c160e",
+                                  "repository": "https://github.com/cocoapods/specs.git",
+                                },
+                                "name": "KSCrash/Recording/Tools",
+                                "version": "1.15.18",
+                              },
+                            },
+                            "labels": Object {
+                              "checksum": "5394936f41e5c1ef7b79cf79b30d53299b0c160e",
+                              "repository": "https://github.com/cocoapods/specs.git",
+                            },
+                            "name": "KSCrash/Recording",
+                            "version": "1.15.18",
+                          },
+                          "KSCrash/Reporting/Filters/Base": Object {
+                            "dependencies": Object {
+                              "KSCrash/Recording": Object {
+                                "dependencies": Object {
+                                  "KSCrash/Recording/Tools": Object {
+                                    "labels": Object {
+                                      "checksum": "5394936f41e5c1ef7b79cf79b30d53299b0c160e",
+                                      "repository": "https://github.com/cocoapods/specs.git",
+                                    },
+                                    "name": "KSCrash/Recording/Tools",
+                                    "version": "1.15.18",
+                                  },
+                                },
+                                "labels": Object {
+                                  "checksum": "5394936f41e5c1ef7b79cf79b30d53299b0c160e",
+                                  "repository": "https://github.com/cocoapods/specs.git",
+                                },
+                                "name": "KSCrash/Recording",
+                                "version": "1.15.18",
+                              },
+                            },
+                            "labels": Object {
+                              "checksum": "5394936f41e5c1ef7b79cf79b30d53299b0c160e",
+                              "repository": "https://github.com/cocoapods/specs.git",
+                            },
+                            "name": "KSCrash/Reporting/Filters/Base",
+                            "version": "1.15.18",
+                          },
+                        },
+                        "labels": Object {
+                          "checksum": "5394936f41e5c1ef7b79cf79b30d53299b0c160e",
+                          "repository": "https://github.com/cocoapods/specs.git",
+                        },
+                        "name": "KSCrash/Reporting/Filters/Basic",
+                        "version": "1.15.18",
+                      },
+                    },
+                    "labels": Object {
+                      "checksum": "5394936f41e5c1ef7b79cf79b30d53299b0c160e",
+                      "repository": "https://github.com/cocoapods/specs.git",
+                    },
+                    "name": "KSCrash/Core",
+                    "version": "1.15.18",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "e2707f9a6b498277d9620a48fcb1bd3b655c8473",
+                  "repository": "https://github.com/cocoapods/specs.git",
+                },
+                "name": "Sentry/KSCrash",
+                "version": "3.9.1",
+              },
+            },
+            "labels": Object {
+              "checksum": "e2707f9a6b498277d9620a48fcb1bd3b655c8473",
+              "repository": "https://github.com/cocoapods/specs.git",
+            },
+            "name": "Sentry",
+            "version": "3.9.1",
+          },
+          "Sentry/KSCrash": Object {
+            "dependencies": Object {
+              "KSCrash/Core": Object {
+                "dependencies": Object {
+                  "KSCrash/Reporting/Filters/Basic": Object {
+                    "dependencies": Object {
+                      "KSCrash/Recording": Object {
+                        "dependencies": Object {
+                          "KSCrash/Recording/Tools": Object {
+                            "labels": Object {
+                              "checksum": "5394936f41e5c1ef7b79cf79b30d53299b0c160e",
+                              "repository": "https://github.com/cocoapods/specs.git",
+                            },
+                            "name": "KSCrash/Recording/Tools",
+                            "version": "1.15.18",
+                          },
+                        },
+                        "labels": Object {
+                          "checksum": "5394936f41e5c1ef7b79cf79b30d53299b0c160e",
+                          "repository": "https://github.com/cocoapods/specs.git",
+                        },
+                        "name": "KSCrash/Recording",
+                        "version": "1.15.18",
+                      },
+                      "KSCrash/Reporting/Filters/Base": Object {
+                        "dependencies": Object {
+                          "KSCrash/Recording": Object {
+                            "dependencies": Object {
+                              "KSCrash/Recording/Tools": Object {
+                                "labels": Object {
+                                  "checksum": "5394936f41e5c1ef7b79cf79b30d53299b0c160e",
+                                  "repository": "https://github.com/cocoapods/specs.git",
+                                },
+                                "name": "KSCrash/Recording/Tools",
+                                "version": "1.15.18",
+                              },
+                            },
+                            "labels": Object {
+                              "checksum": "5394936f41e5c1ef7b79cf79b30d53299b0c160e",
+                              "repository": "https://github.com/cocoapods/specs.git",
+                            },
+                            "name": "KSCrash/Recording",
+                            "version": "1.15.18",
+                          },
+                        },
+                        "labels": Object {
+                          "checksum": "5394936f41e5c1ef7b79cf79b30d53299b0c160e",
+                          "repository": "https://github.com/cocoapods/specs.git",
+                        },
+                        "name": "KSCrash/Reporting/Filters/Base",
+                        "version": "1.15.18",
+                      },
+                    },
+                    "labels": Object {
+                      "checksum": "5394936f41e5c1ef7b79cf79b30d53299b0c160e",
+                      "repository": "https://github.com/cocoapods/specs.git",
+                    },
+                    "name": "KSCrash/Reporting/Filters/Basic",
+                    "version": "1.15.18",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "5394936f41e5c1ef7b79cf79b30d53299b0c160e",
+                  "repository": "https://github.com/cocoapods/specs.git",
+                },
+                "name": "KSCrash/Core",
+                "version": "1.15.18",
+              },
+            },
+            "labels": Object {
+              "checksum": "e2707f9a6b498277d9620a48fcb1bd3b655c8473",
+              "repository": "https://github.com/cocoapods/specs.git",
+            },
+            "name": "Sentry/KSCrash",
+            "version": "3.9.1",
+          },
+        },
+        "labels": Object {
+          "checkoutOptionsGit": "https://github.com/getsentry/react-native-sentry.git",
+          "checkoutOptionsTag": "v0.30.3",
+          "checksum": "3dff4e9bd82aa581dc64ff8d2524d7007cea076b",
+          "externalSourceGit": "https://github.com/getsentry/react-native-sentry.git",
+          "externalSourceTag": "v0.30.3",
+        },
+        "name": "SentryReactNative",
+        "version": "0.30.3",
+      },
+      "Specta": Object {
+        "labels": Object {
+          "checksum": "ac94d110b865115fe60ff2c6d7281053c6f8e8a2",
+          "repository": "https://github.com/cocoapods/specs.git",
+        },
+        "name": "Specta",
+        "version": "1.0.5",
+      },
+      "Starscream": Object {
+        "labels": Object {
+          "checksum": "f5da93fe6984c77b694366bf7299b7dc63a76f26",
+          "repository": "https://github.com/cocoapods/specs.git",
+        },
+        "name": "Starscream",
+        "version": "3.0.4",
+      },
+      "SwiftyJSON": Object {
+        "labels": Object {
+          "checksum": "070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa",
+          "repository": "https://github.com/cocoapods/specs.git",
+        },
+        "name": "SwiftyJSON",
+        "version": "4.0.0",
+      },
+      "Then": Object {
+        "labels": Object {
+          "checksum": "ee21c97b85ff6062b9b0080c9abb1eea46743345",
+          "repository": "https://github.com/cocoapods/specs.git",
+        },
+        "name": "Then",
+        "version": "2.3.0",
+      },
+      "UICKeyChainStore": Object {
+        "labels": Object {
+          "checksum": "e81dc3b58d56ffaed61ab6669eb97071e53fc377",
+          "repository": "https://github.com/cocoapods/specs.git",
+        },
+        "name": "UICKeyChainStore",
+        "version": "1.0.5",
+      },
+      "UIView+BooleanAnimations": Object {
+        "labels": Object {
+          "checksum": "a760be9a066036e55f298b7b7350a6cb14cfcd97",
+          "repository": "https://github.com/cocoapods/specs.git",
+        },
+        "name": "UIView+BooleanAnimations",
+        "version": "1.0.2",
+      },
+      "VCRURLConnection": Object {
+        "labels": Object {
+          "checksum": "accd771ebd4be11183a3e4d5a4403f180a9a235e",
+          "repository": "https://github.com/cocoapods/specs.git",
+        },
+        "name": "VCRURLConnection",
+        "version": "0.2.0",
+      },
+      "XCTest+OHHTTPStubSuiteCleanUp": Object {
+        "dependencies": Object {
+          "OHHTTPStubs": Object {
+            "labels": Object {
+              "checksum": "c93230597bc5c8b74bcfdb403cc8773515b8b08c",
+              "repository": "https://github.com/cocoapods/specs.git",
+            },
+            "name": "OHHTTPStubs",
+            "version": "3.1.2",
+          },
+        },
+        "labels": Object {
+          "checksum": "4469ec8863c6bc022c5089a9b94233eb3416c5ee",
+          "repository": "https://github.com/cocoapods/specs.git",
+        },
+        "name": "XCTest+OHHTTPStubSuiteCleanUp",
+        "version": "1.0.0",
+      },
+      "glog": Object {
+        "labels": Object {
+          "checksum": "affb802cb73dc1156005a5fb19085008bf6ffd52",
+          "externalSourcePodspec": "./externals/glog/glog.podspec",
+        },
+        "name": "glog",
+        "version": "0.3.5",
+      },
+      "iRate": Object {
+        "labels": Object {
+          "checksum": "18fd2d3bd7d2ab01dcd801098cc2f5cbe9f25ffb",
+          "repository": "https://github.com/cocoapods/specs.git",
+        },
+        "name": "iRate",
+        "version": "1.10.2",
+      },
+      "react-native-cameraroll": Object {
+        "dependencies": Object {
+          "React": Object {
+            "dependencies": Object {
+              "React/Core": Object {
+                "dependencies": Object {
+                  "yoga": Object {
+                    "labels": Object {
+                      "checksum": "4ce3811b3db5f47fe1e125f15383003316a616b8",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "yoga",
+                    "version": "0.59.2.React",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "React/Core",
+                "version": "0.59.2",
+              },
+            },
+            "labels": Object {
+              "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+              "repository": "https://github.com/artsy/Specs.git",
+            },
+            "name": "React",
+            "version": "0.59.2",
+          },
+        },
+        "labels": Object {
+          "checkoutOptionsGit": "https://github.com/react-native-community/react-native-cameraroll",
+          "checkoutOptionsTag": "v1.0.5",
+          "checksum": "b1faef9f2ea27b07bdf818b8043909a93f797eca",
+          "externalSourceGit": "https://github.com/react-native-community/react-native-cameraroll",
+          "externalSourceTag": "v1.0.5",
+        },
+        "name": "react-native-cameraroll",
+        "version": "1.0.5",
+      },
+      "react-native-mapbox-gl": Object {
+        "dependencies": Object {
+          "React": Object {
+            "dependencies": Object {
+              "React/Core": Object {
+                "dependencies": Object {
+                  "yoga": Object {
+                    "labels": Object {
+                      "checksum": "4ce3811b3db5f47fe1e125f15383003316a616b8",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "yoga",
+                    "version": "0.59.2.React",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "React/Core",
+                "version": "0.59.2",
+              },
+            },
+            "labels": Object {
+              "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+              "repository": "https://github.com/artsy/Specs.git",
+            },
+            "name": "React",
+            "version": "0.59.2",
+          },
+        },
+        "labels": Object {
+          "checkoutOptionsCommit": "8ad2d3a2207da62024c82624c71df5bf5dabc126",
+          "checkoutOptionsGit": "https://github.com/l2succes/react-native-mapbox-gl",
+          "checksum": "b7309e99290963cc7fe0e34db86c6e16890cfcee",
+          "externalSourceBranch": "fix-gesture-recognizer",
+          "externalSourceGit": "https://github.com/l2succes/react-native-mapbox-gl",
+        },
+        "name": "react-native-mapbox-gl",
+        "version": "6.1.4",
+      },
+      "react-native-navigator-ios": Object {
+        "dependencies": Object {
+          "React": Object {
+            "dependencies": Object {
+              "React/Core": Object {
+                "dependencies": Object {
+                  "yoga": Object {
+                    "labels": Object {
+                      "checksum": "4ce3811b3db5f47fe1e125f15383003316a616b8",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "yoga",
+                    "version": "0.59.2.React",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "React/Core",
+                "version": "0.59.2",
+              },
+            },
+            "labels": Object {
+              "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+              "repository": "https://github.com/artsy/Specs.git",
+            },
+            "name": "React",
+            "version": "0.59.2",
+          },
+        },
+        "labels": Object {
+          "checkoutOptionsCommit": "695725296669114ceeed76bba218fd91cde381c1",
+          "checkoutOptionsGit": "https://github.com/ashfurrow/react-native-navigator-ios",
+          "checksum": "93db84cc26b6f8d776e1f504c56082f593efcd09",
+          "externalSourceBranch": "license_podspec",
+          "externalSourceGit": "https://github.com/ashfurrow/react-native-navigator-ios",
+        },
+        "name": "react-native-navigator-ios",
+        "version": "1.0.0",
+      },
+      "tipsi-stripe": Object {
+        "dependencies": Object {
+          "React": Object {
+            "dependencies": Object {
+              "React/Core": Object {
+                "dependencies": Object {
+                  "yoga": Object {
+                    "labels": Object {
+                      "checksum": "4ce3811b3db5f47fe1e125f15383003316a616b8",
+                      "repository": "https://github.com/artsy/Specs.git",
+                    },
+                    "name": "yoga",
+                    "version": "0.59.2.React",
+                  },
+                },
+                "labels": Object {
+                  "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+                  "repository": "https://github.com/artsy/Specs.git",
+                },
+                "name": "React/Core",
+                "version": "0.59.2",
+              },
+            },
+            "labels": Object {
+              "checksum": "9d063e2f356c8cd2f54dd550d4507740037cbabe",
+              "repository": "https://github.com/artsy/Specs.git",
+            },
+            "name": "React",
+            "version": "0.59.2",
+          },
+          "Stripe": Object {
+            "labels": Object {
+              "checksum": "db29ad197c74aca6fb981e4e8355cf7ebd0fca5a",
+              "repository": "https://github.com/cocoapods/specs.git",
+            },
+            "name": "Stripe",
+            "version": "14.0.0",
+          },
+        },
+        "labels": Object {
+          "checkoutOptionsCommit": "bfebb733fb44d3e1d0522a38a317993f9c686422",
+          "checkoutOptionsGit": "https://github.com/ashfurrow/tipsi-stripe.git",
+          "checksum": "2d0e33b5bb62168cd1f1777a904781725c5baf8a",
+          "externalSourceBranch": "fix-infinite-loop",
+          "externalSourceGit": "https://github.com/ashfurrow/tipsi-stripe.git",
+        },
+        "name": "tipsi-stripe",
+        "version": "7.5.0",
+      },
+    },
+    "name": "eigen",
+    "packageFormatVersion": "cocoapods:0.0.1",
+    "type": "CocoaPods",
+    "version": "0.0.0",
+  },
+  "plugin": Object {
+    "meta": Object {},
+    "name": "cocoapods",
+    "runtime": "1.7.5",
+    "targetFile": "/Users/marius/Development/Snyk/snyk-cocoapods-plugin/test/fixtures/eigen/Podfile.lock",
+  },
+}
+`;
+
+exports[`inspect(rootDir, targetFile?, options?) without targetFile argument works with the simple fixture 1`] = `
+Object {
+  "package": Object {
+    "dependencies": Object {
+      "Reachability": Object {
+        "labels": Object {
+          "checksum": "3c8fe9643e52184d17f207e781cd84158da8c02b",
+          "repository": "trunk",
+        },
+        "name": "Reachability",
+        "version": "3.1.0",
+      },
+    },
+    "name": "simple",
+    "packageFormatVersion": "cocoapods:0.0.1",
+    "type": "CocoaPods",
+    "version": "0.0.0",
+  },
+  "plugin": Object {
+    "meta": Object {},
+    "name": "cocoapods",
+    "runtime": "1.7.5",
+    "targetFile": "/Users/marius/Development/Snyk/snyk-cocoapods-plugin/test/fixtures/simple/Podfile.lock",
+  },
+}
+`;
