@@ -2,7 +2,7 @@ import * as childProcess from 'child_process';
 
 export function execute(
   command: string,
-  args: string[],
+  args: string[] = [],
   options?: { cwd?: string }
 ): Promise<string> {
   const spawnOptions: {
