@@ -15,7 +15,7 @@ stages:
   - test
   - npm release
 script:
-  - 'npm test:unit'
+  - 'npm run test:unit'
 jobs:
   include:
     - stage: lint
