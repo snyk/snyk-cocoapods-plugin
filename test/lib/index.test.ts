@@ -8,6 +8,16 @@ const mockedExecute = (execute as unknown) as jest.MockedFunction<
   typeof execute
 >;
 
+// Note: `any` is necessary due to a quirk between jest and TypeScript.
+// The propertyMatchers argument has the compile type `{ then: any, catch: any }`,
+// which is not the runtime type.
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const singlePkgResultMatcher: any = {
+  plugin: {
+    targetFile: expect.stringMatching(/\/Podfile.lock$/),
+  },
+};
+
 describe('inspect(rootDir, targetFile?, options?)', () => {
   beforeEach(() => {
     mockedExecute.mockResolvedValueOnce('1.7.5');
@@ -71,17 +81,23 @@ describe('inspect(rootDir, targetFile?, options?)', () => {
 
   describe('without targetFile argument', () => {
     test('works with the simple fixture', async () => {
-      await expect(inspect(fixtureDir('simple'))).resolves.toMatchSnapshot();
+      await expect(inspect(fixtureDir('simple'))).resolves.toMatchSnapshot(
+        singlePkgResultMatcher,
+      );
     });
 
     test('works with the eigen fixture', async () => {
-      await expect(inspect(fixtureDir('eigen'))).resolves.toMatchSnapshot();
+      await expect(inspect(fixtureDir('eigen'))).resolves.toMatchSnapshot(
+        singlePkgResultMatcher,
+      );
     });
   });
 
   describe('with a targetFile argument', () => {
     test('works with the simple fixture', async () => {
-      await expect(inspect(fixtureDir('simple'))).resolves.toMatchSnapshot();
+      await expect(inspect(fixtureDir('simple'))).resolves.toMatchSnapshot(
+        singlePkgResultMatcher,
+      );
     });
 
     test('fails if the targetFile doesn’t exist', async () => {

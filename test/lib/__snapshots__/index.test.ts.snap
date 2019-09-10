@@ -22,7 +22,7 @@ Object {
     "meta": Object {},
     "name": "cocoapods",
     "runtime": "1.7.5",
-    "targetFile": "/Users/marius/Development/Snyk/snyk-cocoapods-plugin/test/fixtures/simple/Podfile.lock",
+    "targetFile": StringMatching /\\\\/Podfile\\.lock\\$/,
   },
 }
 `;
@@ -3538,7 +3538,7 @@ Object {
     "meta": Object {},
     "name": "cocoapods",
     "runtime": "1.7.5",
-    "targetFile": "/Users/marius/Development/Snyk/snyk-cocoapods-plugin/test/fixtures/eigen/Podfile.lock",
+    "targetFile": StringMatching /\\\\/Podfile\\.lock\\$/,
   },
 }
 `;
@@ -3565,7 +3565,7 @@ Object {
     "meta": Object {},
     "name": "cocoapods",
     "runtime": "1.7.5",
-    "targetFile": "/Users/marius/Development/Snyk/snyk-cocoapods-plugin/test/fixtures/simple/Podfile.lock",
+    "targetFile": StringMatching /\\\\/Podfile\\.lock\\$/,
   },
 }
 `;
