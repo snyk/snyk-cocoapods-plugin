@@ -112,7 +112,7 @@ describe('inspect(rootDir, targetFile?, options?)', () => {
   });
 
   describe('with an options.subProject argument', () => {
-    test('works with the simple fixture', async () => {
+    test('fails', async () => {
       await expect(
         inspect(fixtureDir('simple'), undefined, {
           subProject: 'doesntMatter',
