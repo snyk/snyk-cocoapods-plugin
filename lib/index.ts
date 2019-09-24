@@ -79,7 +79,7 @@ async function getAllDeps(root: string, targetFile: string): Promise<DepTree> {
 }
 
 async function cocoapodsVersion(root: string): Promise<string> {
-  let podVersionOutput = '[COULD NOT RUN pod --version]';
+  let podVersionOutput = '';
   try {
     // 1st: try to run CocoaPods via bundler
     podVersionOutput = await subProcess.execute('bundle exec pod', ['--version'], {cwd: root});

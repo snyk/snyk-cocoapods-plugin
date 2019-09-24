@@ -69,7 +69,7 @@ describe('inspect(rootDir, targetFile?, options?)', () => {
       const rootDir = fixtureDir('simple');
 
       await expect(inspect(rootDir)).resolves.toMatchObject({
-        plugin: { runtime: '[COULD NOT RUN pod --version]' },
+        plugin: { runtime: '' },
       });
 
       expect(mockedExecute.mock.calls).toEqual([
