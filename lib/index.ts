@@ -73,7 +73,7 @@ async function findTargetFile(root: string): Promise<string | undefined> {
 }
 
 async function getAllDeps(root: string, targetFile: string): Promise<DepTree> {
-  const parser = LockfileParser.readFileSync(targetFile);
+  const parser = await LockfileParser.readFile(targetFile);
   const graph = parser.toDepGraph();
   return graphToDepTree(graph, "cocoapods") as DepTree;
 }
