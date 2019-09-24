@@ -12,11 +12,13 @@ const mockedExecute = (execute as unknown) as jest.MockedFunction<
 // The propertyMatchers argument has the compile type `{ then: any, catch: any }`,
 // which is not the runtime type.
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const singlePkgResultMatcher: any = {
-  plugin: {
-    targetFile: expect.stringMatching(/\/Podfile.lock$/),
-  },
-};
+function singlePkgResultMatcher(regexp: RegExp = /(^|\/)Podfile$/): any {
+  return {
+    plugin: {
+      targetFile: expect.stringMatching(regexp),
+    },
+  };
+}
 
 describe('inspect(rootDir, targetFile?, options?)', () => {
   beforeEach(() => {
@@ -82,31 +84,103 @@ describe('inspect(rootDir, targetFile?, options?)', () => {
   describe('without targetFile argument', () => {
     test('works with the simple fixture', async () => {
       await expect(inspect(fixtureDir('simple'))).resolves.toMatchSnapshot(
-        singlePkgResultMatcher,
+        singlePkgResultMatcher(),
       );
     });
 
     test('works with the eigen fixture', async () => {
       await expect(inspect(fixtureDir('eigen'))).resolves.toMatchSnapshot(
-        singlePkgResultMatcher,
+        singlePkgResultMatcher(),
+      );
+    });
+
+    test('works with a fixture where no manifest file is present', async () => {
+      await expect(
+        inspect(fixtureDir('simple_without_manifest')),
+      ).resolves.toMatchSnapshot(singlePkgResultMatcher(/(^|\/)Podfile.lock$/));
+    });
+
+    test('works with a fixture using a legacy manifest file name', async () => {
+      await expect(
+        inspect(fixtureDir('legacy_manifest_file')),
+      ).resolves.toMatchSnapshot(singlePkgResultMatcher(/^CocoaPods.podfile$/));
+    });
+
+    test('fails with a fixture where no lockfile is present', async () => {
+      await expect(
+        inspect(fixtureDir('simple_without_lockfile')),
+      ).rejects.toThrow(
+        'Could not find lockfile "Podfile.lock"! This might be resolved by running `pod install`.',
       );
     });
   });
 
   describe('with a targetFile argument', () => {
-    test('works with the simple fixture', async () => {
-      await expect(inspect(fixtureDir('simple'))).resolves.toMatchSnapshot(
-        singlePkgResultMatcher,
-      );
+    describe('with the simple fixture', () => {
+      test('works with the Podfile', async () => {
+        await expect(
+          inspect(fixtureDir('simple'), 'Podfile'),
+        ).resolves.toMatchSnapshot(singlePkgResultMatcher());
+      });
+
+      test('works with the Podfile.lock', async () => {
+        await expect(
+          inspect(fixtureDir('simple'), 'Podfile.lock'),
+        ).resolves.toMatchSnapshot(singlePkgResultMatcher());
+      });
+
+      test('fails if the targetFile doesn’t exist', async () => {
+        await expect(
+          inspect(fixtureDir('simple'), './no/Podfile.lock'),
+        ).rejects.toMatchObject({
+          message: expect.stringMatching(
+            "ENOENT: no such file or directory, open '[^']*no/Podfile.lock'",
+          ),
+        });
+      });
+
+      test('fails if the targetFile uses an unsupported name', async () => {
+        await expect(
+          inspect(fixtureDir('simple'), 'Cacaofile'),
+        ).rejects.toMatchObject({
+          message: expect.stringMatching('Unexpected name for target file!'),
+        });
+      });
     });
 
-    test('fails if the targetFile doesn’t exist', async () => {
-      await expect(
-        inspect(fixtureDir('simple'), './no/Podfile.lock'),
-      ).rejects.toMatchObject({
-        message: expect.stringMatching(
-          "ENOENT: no such file or directory, open '[^']*no/Podfile.lock'",
-        ),
+    describe('with a fixture where no manifest file is present', () => {
+      test('works with the Podfile.lock', async () => {
+        await expect(
+          inspect(fixtureDir('simple_without_manifest'), 'Podfile.lock'),
+        ).resolves.toMatchSnapshot(
+          singlePkgResultMatcher(/(^|\/)Podfile.lock$/),
+        );
+      });
+    });
+
+    describe('with a fixture where no lockfile is present', () => {
+      test('fails', async () => {
+        await expect(
+          inspect(fixtureDir('simple_without_lockfile'), 'Podfile'),
+        ).rejects.toThrow(
+          'Could not find lockfile "Podfile.lock"! This might be resolved by running `pod install`.',
+        );
+      });
+    });
+
+    describe('with a fixture using a legacy file name', () => {
+      test('works with the CocoaPods.podfile', async () => {
+        await expect(
+          inspect(fixtureDir('legacy_manifest_file')),
+        ).resolves.toMatchSnapshot(
+          singlePkgResultMatcher(/^CocoaPods.podfile$/),
+        );
+      });
+
+      test('fails if the targetFile doesn’t exist', async () => {
+        await expect(
+          inspect(fixtureDir('legacy_manifest_file'), 'Podfile'),
+        ).rejects.toThrow('Given target file ("Podfile") doesn\'t exist!');
       });
     });
   });

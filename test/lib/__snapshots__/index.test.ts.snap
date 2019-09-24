@@ -1,6 +1,60 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`inspect(rootDir, targetFile?, options?) with a targetFile argument works with the simple fixture 1`] = `
+exports[`inspect(rootDir, targetFile?, options?) with a targetFile argument with a fixture using a legacy file name works with the CocoaPods.podfile 1`] = `
+Object {
+  "package": Object {
+    "dependencies": Object {
+      "Reachability": Object {
+        "labels": Object {
+          "checksum": "3c8fe9643e52184d17f207e781cd84158da8c02b",
+          "repository": "trunk",
+        },
+        "name": "Reachability",
+        "version": "3.1.0",
+      },
+    },
+    "name": "legacy_manifest_file",
+    "packageFormatVersion": "cocoapods:0.0.1",
+    "type": "CocoaPods",
+    "version": "0.0.0",
+  },
+  "plugin": Object {
+    "meta": Object {},
+    "name": "cocoapods",
+    "runtime": "1.7.5",
+    "targetFile": StringMatching /\\^CocoaPods\\.podfile\\$/,
+  },
+}
+`;
+
+exports[`inspect(rootDir, targetFile?, options?) with a targetFile argument with a fixture where no manifest file is present works with the Podfile.lock 1`] = `
+Object {
+  "package": Object {
+    "dependencies": Object {
+      "Reachability": Object {
+        "labels": Object {
+          "checksum": "3c8fe9643e52184d17f207e781cd84158da8c02b",
+          "repository": "trunk",
+        },
+        "name": "Reachability",
+        "version": "3.1.0",
+      },
+    },
+    "name": "simple_without_manifest",
+    "packageFormatVersion": "cocoapods:0.0.1",
+    "type": "CocoaPods",
+    "version": "0.0.0",
+  },
+  "plugin": Object {
+    "meta": Object {},
+    "name": "cocoapods",
+    "runtime": "1.7.5",
+    "targetFile": StringMatching /\\(\\^\\|\\\\/\\)Podfile\\.lock\\$/,
+  },
+}
+`;
+
+exports[`inspect(rootDir, targetFile?, options?) with a targetFile argument with the simple fixture works with the Podfile 1`] = `
 Object {
   "package": Object {
     "dependencies": Object {
@@ -22,7 +76,88 @@ Object {
     "meta": Object {},
     "name": "cocoapods",
     "runtime": "1.7.5",
-    "targetFile": StringMatching /\\\\/Podfile\\.lock\\$/,
+    "targetFile": StringMatching /\\(\\^\\|\\\\/\\)Podfile\\$/,
+  },
+}
+`;
+
+exports[`inspect(rootDir, targetFile?, options?) with a targetFile argument with the simple fixture works with the Podfile.lock 1`] = `
+Object {
+  "package": Object {
+    "dependencies": Object {
+      "Reachability": Object {
+        "labels": Object {
+          "checksum": "3c8fe9643e52184d17f207e781cd84158da8c02b",
+          "repository": "trunk",
+        },
+        "name": "Reachability",
+        "version": "3.1.0",
+      },
+    },
+    "name": "simple",
+    "packageFormatVersion": "cocoapods:0.0.1",
+    "type": "CocoaPods",
+    "version": "0.0.0",
+  },
+  "plugin": Object {
+    "meta": Object {},
+    "name": "cocoapods",
+    "runtime": "1.7.5",
+    "targetFile": StringMatching /\\(\\^\\|\\\\/\\)Podfile\\$/,
+  },
+}
+`;
+
+exports[`inspect(rootDir, targetFile?, options?) without targetFile argument works with a fixture using a legacy manifest file name 1`] = `
+Object {
+  "package": Object {
+    "dependencies": Object {
+      "Reachability": Object {
+        "labels": Object {
+          "checksum": "3c8fe9643e52184d17f207e781cd84158da8c02b",
+          "repository": "trunk",
+        },
+        "name": "Reachability",
+        "version": "3.1.0",
+      },
+    },
+    "name": "legacy_manifest_file",
+    "packageFormatVersion": "cocoapods:0.0.1",
+    "type": "CocoaPods",
+    "version": "0.0.0",
+  },
+  "plugin": Object {
+    "meta": Object {},
+    "name": "cocoapods",
+    "runtime": "1.7.5",
+    "targetFile": StringMatching /\\^CocoaPods\\.podfile\\$/,
+  },
+}
+`;
+
+exports[`inspect(rootDir, targetFile?, options?) without targetFile argument works with a fixture where no manifest file is present 1`] = `
+Object {
+  "package": Object {
+    "dependencies": Object {
+      "Reachability": Object {
+        "labels": Object {
+          "checksum": "3c8fe9643e52184d17f207e781cd84158da8c02b",
+          "repository": "trunk",
+        },
+        "name": "Reachability",
+        "version": "3.1.0",
+      },
+    },
+    "name": "simple_without_manifest",
+    "packageFormatVersion": "cocoapods:0.0.1",
+    "type": "CocoaPods",
+    "version": "0.0.0",
+  },
+  "plugin": Object {
+    "meta": Object {},
+    "name": "cocoapods",
+    "runtime": "1.7.5",
+    "targetFile": StringMatching /\\(\\^\\|\\\\/\\)Podfile\\.lock\\$/,
   },
 }
 `;
@@ -3538,7 +3673,7 @@ Object {
     "meta": Object {},
     "name": "cocoapods",
     "runtime": "1.7.5",
-    "targetFile": StringMatching /\\\\/Podfile\\.lock\\$/,
+    "targetFile": StringMatching /\\(\\^\\|\\\\/\\)Podfile\\$/,
   },
 }
 `;
@@ -3565,7 +3700,7 @@ Object {
     "meta": Object {},
     "name": "cocoapods",
     "runtime": "1.7.5",
-    "targetFile": StringMatching /\\\\/Podfile\\.lock\\$/,
+    "targetFile": StringMatching /\\(\\^\\|\\\\/\\)Podfile\\$/,
   },
 }
 `;

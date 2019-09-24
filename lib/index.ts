@@ -18,9 +18,17 @@ const _: SingleSubprojectPlugin = {
   inspect,
 };
 
+const manifestFileNames = [
+  "CocoaPods.podfile.yaml",
+  "CocoaPods.podfile",
+  "Podfile",
+];
+
+const lockfileName = "Podfile.lock";
+
 export async function inspect(
   root: string,
-  givenTargetFile?: string,
+  targetFile?: string,
   options?: SingleSubprojectInspectOptions,
 ): Promise<SinglePackageResult> {
   if (!options) {
@@ -31,24 +39,44 @@ export async function inspect(
     throw new Error("The CocoaPods plugin doesn't support specifying a subProject!");
   }
 
-  let targetFile: string;
-  if (givenTargetFile) {
-    targetFile = path.resolve(root, givenTargetFile);
-  } else {
-    const discoveredTargetFile = await findTargetFile(root);
-    if (!discoveredTargetFile) {
-      throw new Error("No target file given and couldn’t automatically find one!");
+  let lockfilePath: string;
+  async function expectToFindLockfile(): Promise<string> {
+    const discoveredLockfilePath = await findLockfile(root);
+    if (!discoveredLockfilePath) {
+      throw new Error("Could not find lockfile \"Podfile.lock\"! This might be resolved by running `pod install`.");
     }
-    targetFile = discoveredTargetFile;
+    return discoveredLockfilePath;
+  }
+
+  let manifestFilePath: string | undefined;
+  if (targetFile) {
+    const { base } = path.parse(targetFile);
+    if (base === lockfileName) {
+      lockfilePath = targetFile;
+      manifestFilePath = await findManifestFile(root);
+    } else if (manifestFileNames.indexOf(targetFile) !== -1) {
+      const absTargetFilePath = path.join(root, targetFile);
+      if (!await fsExists(absTargetFilePath)) {
+        throw new Error(`Given target file ("${targetFile}") doesn't exist!`)
+      }
+      manifestFilePath = targetFile;
+      lockfilePath = await expectToFindLockfile();
+    } else {
+      throw new Error("Unexpected name for target file!");
+    }
+  } else {
+    manifestFilePath = await findManifestFile(root);
+    lockfilePath = await expectToFindLockfile();
   }
   
   const plugin: PluginMetadata = {
     meta: {},
     name: 'cocoapods',
     runtime: await cocoapodsVersion(root),
-    targetFile,
+    targetFile: manifestFilePath || lockfilePath,
   };
-  const depTree = await getAllDeps(root, targetFile);
+  const absLockfilePath = path.join(root, lockfilePath);
+  const depTree = await getAllDeps(absLockfilePath);
   return {
     package: depTree,
     plugin,
@@ -65,15 +93,24 @@ async function fsExists(pathToTest: string): Promise<boolean> {
   })
 }
 
-async function findTargetFile(root: string): Promise<string | undefined> {
-  const targetFilePath = path.join(root, "Podfile.lock");
-  if (await fsExists(targetFilePath)) {
-    return targetFilePath;
+async function findManifestFile(root: string): Promise<string | undefined> {
+  for (const manifestFileName of manifestFileNames) {
+    const targetFilePath = path.join(root, manifestFileName);
+    if (await fsExists(targetFilePath)) {
+      return manifestFileName;
+    }
   }
 }
 
-async function getAllDeps(root: string, targetFile: string): Promise<DepTree> {
-  const parser = await LockfileParser.readFile(targetFile);
+async function findLockfile(root: string): Promise<string | undefined> {
+  const lockfilePath = path.join(root, lockfileName);
+  if (await fsExists(lockfilePath)) {
+    return lockfileName;
+  }
+}
+
+async function getAllDeps(lockfilePath: string): Promise<DepTree> {
+  const parser = await LockfileParser.readFile(lockfilePath);
   const graph = parser.toDepGraph();
   return graphToDepTree(graph, "cocoapods") as DepTree;
 }
