@@ -18,13 +18,13 @@ const _: SingleSubprojectPlugin = {
   inspect,
 };
 
-const manifestFileNames = [
+const MANIFEST_FILE_NAMES = [
   "CocoaPods.podfile.yaml",
   "CocoaPods.podfile",
   "Podfile",
 ];
 
-const lockfileName = "Podfile.lock";
+const LOCKFILE_NAME = "Podfile.lock";
 
 export async function inspect(
   root: string,
@@ -51,10 +51,10 @@ export async function inspect(
   let manifestFilePath: string | undefined;
   if (targetFile) {
     const { base } = path.parse(targetFile);
-    if (base === lockfileName) {
+    if (base === LOCKFILE_NAME) {
       lockfilePath = targetFile;
       manifestFilePath = await findManifestFile(root);
-    } else if (manifestFileNames.indexOf(targetFile) !== -1) {
+    } else if (MANIFEST_FILE_NAMES.indexOf(targetFile) !== -1) {
       const absTargetFilePath = path.join(root, targetFile);
       if (!await fsExists(absTargetFilePath)) {
         throw new Error(`Given target file ("${targetFile}") doesn't exist!`)
@@ -94,7 +94,7 @@ async function fsExists(pathToTest: string): Promise<boolean> {
 }
 
 async function findManifestFile(root: string): Promise<string | undefined> {
-  for (const manifestFileName of manifestFileNames) {
+  for (const manifestFileName of MANIFEST_FILE_NAMES) {
     const targetFilePath = path.join(root, manifestFileName);
     if (await fsExists(targetFilePath)) {
       return manifestFileName;
@@ -103,9 +103,9 @@ async function findManifestFile(root: string): Promise<string | undefined> {
 }
 
 async function findLockfile(root: string): Promise<string | undefined> {
-  const lockfilePath = path.join(root, lockfileName);
+  const lockfilePath = path.join(root, LOCKFILE_NAME);
   if (await fsExists(lockfilePath)) {
-    return lockfileName;
+    return LOCKFILE_NAME;
   }
 }
 
