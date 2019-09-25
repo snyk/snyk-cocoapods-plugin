@@ -1,7 +1,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import * as subProcess from './sub-process';
-import LockfileParser from '@snyk/cocoapods-lockfile-parser';
+import { LockfileParser } from '@snyk/cocoapods-lockfile-parser';
 import {
   SingleSubprojectInspectOptions, SinglePackageResult,
   PluginMetadata, SingleSubprojectPlugin,
