@@ -1,5 +1,6 @@
 import * as fs from 'fs';
 import * as path from 'path';
+import * as crypto from 'crypto';
 import * as subProcess from './sub-process';
 import { LockfileParser } from '@snyk/cocoapods-lockfile-parser';
 import {
@@ -26,13 +27,20 @@ const MANIFEST_FILE_NAMES = [
 
 const LOCKFILE_NAME = "Podfile.lock";
 
+export interface CocoaPodsInspectOptions extends SingleSubprojectInspectOptions {
+  strictOutOfSync?: boolean;
+}
+
 export async function inspect(
   root: string,
   targetFile?: string,
-  options?: SingleSubprojectInspectOptions,
+  options?: CocoaPodsInspectOptions,
 ): Promise<SinglePackageResult> {
   if (!options) {
     options = {dev: false};
+  }
+  if (!("strictOutOfSync" in options)) {
+    options.strictOutOfSync = false;
   }
 
   if (options.subProject) {
@@ -68,6 +76,24 @@ export async function inspect(
     manifestFilePath = await findManifestFile(root);
     lockfilePath = await expectToFindLockfile();
   }
+
+  const absLockfilePath = path.join(root, lockfilePath);
+  
+  if (options.strictOutOfSync) {
+    if (!manifestFilePath) {
+      throw new Error("Option `--strict-out-of-sync=true` given, but no manifest file could be found!");
+    }    
+    const absManifestFilePath = path.join(root, manifestFilePath);
+
+    const result = await verifyChecksum(absManifestFilePath, absLockfilePath);
+    if (result === ChecksumVerificationResult.NoChecksumInLockfile) {
+      throw new Error("Option `--strict-out-of-sync=true` given, but lockfile doesn't encode checksum of Podfile! "
+                    + "Try to update the CocoaPods integration via \"pod install\" or omit the option.");
+    }
+    if (result === ChecksumVerificationResult.Invalid) {
+      throw new OutOfSyncError(manifestFilePath, lockfilePath);
+    }
+  }
   
   const plugin: PluginMetadata = {
     meta: {},
@@ -75,7 +101,6 @@ export async function inspect(
     runtime: await cocoapodsVersion(root),
     targetFile: manifestFilePath || lockfilePath,
   };
-  const absLockfilePath = path.join(root, lockfilePath);
   const depTree = await getAllDeps(absLockfilePath);
   return {
     package: depTree,
@@ -93,6 +118,18 @@ async function fsExists(pathToTest: string): Promise<boolean> {
   })
 }
 
+async function fsReadFile(filename: string): Promise<string> {
+  return new Promise((resolve, reject) => {
+    fs.readFile(filename, 'utf8', (err, data) => {
+      if (err) {
+        reject(err);
+        return
+      }
+      resolve(data);
+    })
+  });
+}
+
 async function findManifestFile(root: string): Promise<string | undefined> {
   for (const manifestFileName of MANIFEST_FILE_NAMES) {
     const targetFilePath = path.join(root, manifestFileName);
@@ -106,6 +143,25 @@ async function findLockfile(root: string): Promise<string | undefined> {
   const lockfilePath = path.join(root, LOCKFILE_NAME);
   if (await fsExists(lockfilePath)) {
     return LOCKFILE_NAME;
+  }
+}
+
+enum ChecksumVerificationResult {
+  Valid,
+  Invalid,
+  NoChecksumInLockfile
+}
+
+async function verifyChecksum(manifestFilePath: string, lockfilePath: string): Promise<ChecksumVerificationResult> {
+  const manifestFileContents = await fsReadFile(manifestFilePath);
+  const checksum = crypto.createHash('sha1').update(manifestFileContents).digest('hex');
+  const parser = await LockfileParser.readFile(lockfilePath);
+  if (parser.podfileChecksum === undefined) {
+    return ChecksumVerificationResult.NoChecksumInLockfile;
+  } else if (parser.podfileChecksum === checksum) {
+    return ChecksumVerificationResult.Valid;
+  } else {
+    return ChecksumVerificationResult.Invalid;
   }
 }
 
@@ -129,4 +185,16 @@ async function cocoapodsVersion(root: string): Promise<string> {
     }    
   }
   return podVersionOutput.trim();
+}
+
+export class OutOfSyncError extends Error {
+  public code = 422;
+  public name = 'OutOfSyncError';
+
+  public constructor(manifestFileName: string, lockfileName: string) {
+    super(`Your Podfile ("${manifestFileName}") is not in sync ` +
+      `with your lockfile ("${lockfileName}"). ` +
+      `Please run "pod install" and try again.`);
+    Error.captureStackTrace(this, OutOfSyncError);
+  }
 }
