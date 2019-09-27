@@ -185,6 +185,46 @@ describe('inspect(rootDir, targetFile?, options?)', () => {
     });
   });
 
+  describe('with options.strictOutOfSync=true as argument', () => {
+    test('succeeds when the checksum matches', async () => {
+      await expect(
+        inspect(fixtureDir('simple'), undefined, {
+          strictOutOfSync: true,
+        }),
+      ).resolves.not.toBeUndefined();
+    });
+
+    test('fails when the checksum mismatches', async () => {
+      await expect(
+        inspect(fixtureDir('simple_with_checksum_mismatch'), undefined, {
+          strictOutOfSync: true,
+        }),
+      ).rejects.toThrowError(
+        'Your Podfile ("Podfile") is not in sync with your lockfile ("Podfile.lock"). Please run "pod install" and try again.',
+      );
+    });
+
+    test('fails when there is no manifest', async () => {
+      await expect(
+        inspect(fixtureDir('simple_without_manifest'), undefined, {
+          strictOutOfSync: true,
+        }),
+      ).rejects.toThrow(
+        'Option `--strict-out-of-sync=true` given, but no manifest file could be found!',
+      );
+    });
+
+    test('fails when there is no checksum', async () => {
+      await expect(
+        inspect(fixtureDir('legacy_lockfile'), undefined, {
+          strictOutOfSync: true,
+        }),
+      ).rejects.toThrow(
+        'Option `--strict-out-of-sync=true` given, but lockfile doesn\'t encode checksum of Podfile! Try to update the CocoaPods integration via "pod install" or omit the option.',
+      );
+    });
+  });
+
   describe('with an options.subProject argument', () => {
     test('fails', async () => {
       await expect(
