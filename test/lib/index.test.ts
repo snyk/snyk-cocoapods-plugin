@@ -225,6 +225,14 @@ describe('inspect(rootDir, targetFile?, options?)', () => {
     });
   });
 
+  test('fails if the targetFile cannot be parsed', async () => {
+    await expect(
+      inspect(fixtureDir('lockfile_in_conflict')),
+    ).rejects.toThrowError(
+      /^Error while parsing Podfile.lock:\ncan not read a block mapping entry/,
+    );
+  });
+
   describe('with an options.subProject argument', () => {
     test('fails', async () => {
       await expect(
