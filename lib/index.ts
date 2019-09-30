@@ -167,7 +167,12 @@ async function verifyChecksum(manifestFilePath: string, lockfilePath: string): P
 }
 
 async function getAllDeps(lockfilePath: string): Promise<DepTree> {
-  const parser = await LockfileParser.readFile(lockfilePath);
+  let parser: LockfileParser;
+  try {
+    parser = await LockfileParser.readFile(lockfilePath);
+  } catch (error) {
+    throw new Error(`Error while parsing ${LOCKFILE_NAME}:\n${error.message}`);
+  }
   const graph = parser.toDepGraph();
   return graphToDepTree(graph, "cocoapods") as DepTree;
 }
