@@ -148,6 +148,20 @@ describe('inspect(rootDir, targetFile?, options?)', () => {
       });
     });
 
+    describe('with multi project fixture', () => {
+      test('works when the Podfile is in a subdir', async () => {
+        await expect(
+          inspect(fixtureDir('multi'), 'a/Podfile'),
+        ).resolves.toMatchObject(singlePkgResultMatcher(/^a\/Podfile$/));
+      });
+
+      test('works when the Podfile.lock is in a subdir', async () => {
+        await expect(
+          inspect(fixtureDir('multi'), 'a/Podfile.lock'),
+        ).resolves.toMatchObject(singlePkgResultMatcher(/^a\/Podfile$/));
+      });
+    });
+
     describe('with a fixture where no manifest file is present', () => {
       test('works with the Podfile.lock', async () => {
         await expect(

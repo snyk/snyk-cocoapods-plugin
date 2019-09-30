@@ -48,8 +48,8 @@ export async function inspect(
   }
 
   let lockfilePath: string;
-  async function expectToFindLockfile(): Promise<string> {
-    const discoveredLockfilePath = await findLockfile(root);
+  async function expectToFindLockfile(dir: string = '.'): Promise<string> {
+    const discoveredLockfilePath = await findLockfile(root, dir);
     if (!discoveredLockfilePath) {
       throw new Error("Could not find lockfile \"Podfile.lock\"! This might be resolved by running `pod install`.");
     }
@@ -58,17 +58,17 @@ export async function inspect(
 
   let manifestFilePath: string | undefined;
   if (targetFile) {
-    const { base } = path.parse(targetFile);
+    const { base, dir } = path.parse(targetFile);
     if (base === LOCKFILE_NAME) {
       lockfilePath = targetFile;
-      manifestFilePath = await findManifestFile(root);
-    } else if (MANIFEST_FILE_NAMES.indexOf(targetFile) !== -1) {
+      manifestFilePath = await findManifestFile(root, dir);
+    } else if (MANIFEST_FILE_NAMES.indexOf(base) !== -1) {
       const absTargetFilePath = path.join(root, targetFile);
       if (!await fsExists(absTargetFilePath)) {
         throw new Error(`Given target file ("${targetFile}") doesn't exist!`)
       }
       manifestFilePath = targetFile;
-      lockfilePath = await expectToFindLockfile();
+      lockfilePath = await expectToFindLockfile(dir);
     } else {
       throw new Error("Unexpected name for target file!");
     }
@@ -130,19 +130,19 @@ async function fsReadFile(filename: string): Promise<string> {
   });
 }
 
-async function findManifestFile(root: string): Promise<string | undefined> {
+async function findManifestFile(root: string, dir: string = '.'): Promise<string | undefined> {
   for (const manifestFileName of MANIFEST_FILE_NAMES) {
-    const targetFilePath = path.join(root, manifestFileName);
+    const targetFilePath = path.join(root, dir, manifestFileName);
     if (await fsExists(targetFilePath)) {
-      return manifestFileName;
+      return path.join(dir, manifestFileName);
     }
   }
 }
 
-async function findLockfile(root: string): Promise<string | undefined> {
-  const lockfilePath = path.join(root, LOCKFILE_NAME);
+async function findLockfile(root: string, dir: string = '.'): Promise<string | undefined> {
+  const lockfilePath = path.join(root, dir, LOCKFILE_NAME);
   if (await fsExists(lockfilePath)) {
-    return LOCKFILE_NAME;
+    return path.join(dir, LOCKFILE_NAME);
   }
 }
 
