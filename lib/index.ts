@@ -23,6 +23,7 @@ const MANIFEST_FILE_NAMES = [
   "CocoaPods.podfile.yaml",
   "CocoaPods.podfile",
   "Podfile",
+  "Podfile.rb",
 ];
 
 const LOCKFILE_NAME = "Podfile.lock";
