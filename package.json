@@ -5,10 +5,8 @@
   "scripts": {
     "format:check": "prettier --check '{*,{lib,test}/!(fixtures)/**/*}.{js,ts,json,yml}'",
     "format": "prettier --write '{*,{lib,test}/!(fixtures)/**/*}.{js,ts,json,yml}'",
-    "lint": "npm run format:check && npm run lint:eslint && npm run lint:tslint-config && npm run lint:tslint",
-    "lint:eslint": "eslint --cache '{lib,test}/**/*.ts'",
-    "lint:tslint": "tslint -p tsconfig.json",
-    "lint:tslint-config": "tslint-config-prettier-check ./tslint.json",
+    "lint": "npm run format:check && npm run lint:eslint",
+    "lint:eslint": "eslint 'lib/**/*.ts' && (cd test && eslint '**/*.ts')",
     "test": "npm run lint && npm run test:unit",
     "test:unit": "jest",
     "test:coverage": "npm run test:unit -- --coverage",
@@ -42,17 +40,15 @@
   "devDependencies": {
     "@types/jest": "^24.0.13",
     "@types/node": "^4.0.47",
-    "@typescript-eslint/eslint-plugin": "^1.13.0",
-    "@typescript-eslint/parser": "^1.13.0",
-    "eslint": "^5.16.0",
-    "eslint-config-prettier": "^5.1.0",
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.11.0",
     "jest": "^24.8.0",
     "prettier": "^1.18.2",
     "ts-jest": "^24.0.2",
     "ts-node": "7.0.0",
     "tsc-watch": "^2.2.1",
-    "tslint": "5.11.0",
-    "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.7.3"
   }
 }
