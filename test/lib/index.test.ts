@@ -12,7 +12,7 @@ const mockedExecute = (execute as unknown) as jest.MockedFunction<
 // The propertyMatchers argument has the compile type `{ then: any, catch: any }`,
 // which is not the runtime type.
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-function singlePkgResultMatcher(regexp: RegExp = /(^|\/)Podfile$/): any {
+function singlePkgResultMatcher(regexp = /(^|\/)Podfile$/): any {
   return {
     plugin: {
       targetFile: expect.stringMatching(regexp),

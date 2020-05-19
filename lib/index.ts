@@ -49,7 +49,7 @@ export async function inspect(
   }
 
   let lockfilePath: string;
-  async function expectToFindLockfile(dir: string = '.'): Promise<string> {
+  async function expectToFindLockfile(dir = '.'): Promise<string> {
     const discoveredLockfilePath = await findLockfile(root, dir);
     if (!discoveredLockfilePath) {
       throw new Error("Could not find lockfile \"Podfile.lock\"! This might be resolved by running `pod install`.");
@@ -131,7 +131,7 @@ async function fsReadFile(filename: string): Promise<string> {
   });
 }
 
-async function findManifestFile(root: string, dir: string = '.'): Promise<string | undefined> {
+async function findManifestFile(root: string, dir = '.'): Promise<string | undefined> {
   for (const manifestFileName of MANIFEST_FILE_NAMES) {
     const targetFilePath = path.join(root, dir, manifestFileName);
     if (await fsExists(targetFilePath)) {
@@ -140,7 +140,7 @@ async function findManifestFile(root: string, dir: string = '.'): Promise<string
   }
 }
 
-async function findLockfile(root: string, dir: string = '.'): Promise<string | undefined> {
+async function findLockfile(root: string, dir = '.'): Promise<string | undefined> {
   const lockfilePath = path.join(root, dir, LOCKFILE_NAME);
   if (await fsExists(lockfilePath)) {
     return path.join(dir, LOCKFILE_NAME);
