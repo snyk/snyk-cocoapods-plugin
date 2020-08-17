@@ -6,8 +6,8 @@ import { LockfileParser } from '@snyk/cocoapods-lockfile-parser';
 import {
   SingleSubprojectInspectOptions, SinglePackageResult,
   PluginMetadata, SingleSubprojectPlugin,
-} from '@snyk/cli-interface/dist/legacy/plugin';
-import { DepTree } from '@snyk/cli-interface/dist/legacy/common';
+} from '@snyk/cli-interface/legacy/plugin';
+import { DepTree } from '@snyk/cli-interface/legacy/common';
 import { graphToDepTree } from '@snyk/dep-graph/dist/legacy';
 
 // Compile-time check that we are implementing the plugin API properly
@@ -79,11 +79,11 @@ export async function inspect(
   }
 
   const absLockfilePath = path.join(root, lockfilePath);
-  
+
   if (options.strictOutOfSync) {
     if (!manifestFilePath) {
       throw new Error("Option `--strict-out-of-sync=true` given, but no manifest file could be found!");
-    }    
+    }
     const absManifestFilePath = path.join(root, manifestFilePath);
 
     const result = await verifyChecksum(absManifestFilePath, absLockfilePath);
@@ -95,7 +95,7 @@ export async function inspect(
       throw new OutOfSyncError(manifestFilePath, lockfilePath);
     }
   }
-  
+
   const plugin: PluginMetadata = {
     meta: {},
     name: 'cocoapods',
@@ -188,7 +188,7 @@ async function cocoapodsVersion(root: string): Promise<string> {
       podVersionOutput = await subProcess.execute('pod', ['--version'], {cwd: root});
     } catch {
       // intentionally empty
-    }    
+    }
   }
   return podVersionOutput.trim();
 }
