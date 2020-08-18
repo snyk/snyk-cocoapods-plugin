@@ -31,7 +31,7 @@
   ],
   "homepage": "https://github.com/snyk/snyk-cocoapods-plugin#readme",
   "dependencies": {
-    "@snyk/cli-interface": "2.6.1",
+    "@snyk/cli-interface": "2.8.1",
     "@snyk/cocoapods-lockfile-parser": "3.5.1",
     "@snyk/dep-graph": "^1.19.0",
     "source-map-support": "^0.5.7",
