@@ -4,9 +4,7 @@ import { execute } from '../../lib/sub-process';
 
 jest.mock('../../lib/sub-process');
 
-const mockedExecute = (execute as unknown) as jest.MockedFunction<
-  typeof execute
->;
+const mockedExecute = execute as unknown as jest.MockedFunction<typeof execute>;
 
 // Note: `any` is necessary due to a quirk between jest and TypeScript.
 // The propertyMatchers argument has the compile type `{ then: any, catch: any }`,
