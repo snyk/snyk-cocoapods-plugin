@@ -170,7 +170,7 @@ async function getAllDeps(lockfilePath: string): Promise<DepTree> {
   let parser: LockfileParser;
   try {
     parser = await LockfileParser.readFile(lockfilePath);
-  } catch (error) {
+  } catch (error: any) {
     throw new Error(`Error while parsing ${LOCKFILE_NAME}:\n${error.message}`);
   }
   const graph = parser.toDepGraph();
