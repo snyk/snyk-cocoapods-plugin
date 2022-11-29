@@ -34,6 +34,7 @@
     "@snyk/cli-interface": "^2.11.0",
     "@snyk/cocoapods-lockfile-parser": "3.6.2",
     "@snyk/dep-graph": "^1.23.1",
+    "shescape": "1.6.1",
     "source-map-support": "^0.5.7",
     "tslib": "^2.0.0"
   },

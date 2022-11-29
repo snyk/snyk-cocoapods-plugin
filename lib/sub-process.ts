@@ -1,4 +1,5 @@
 import * as childProcess from 'child_process';
+import { quoteAll } from 'shescape';
 
 export function execute(
   command: string,
@@ -12,6 +13,8 @@ export function execute(
   if (options && options.cwd) {
     spawnOptions.cwd = options.cwd;
   }
+
+  args = quoteAll(args, spawnOptions);
 
   return new Promise((resolve, reject) => {
     let stdout = '';

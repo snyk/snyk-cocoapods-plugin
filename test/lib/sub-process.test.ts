@@ -27,7 +27,7 @@ describe('execute()', () => {
 
   test('Considers option.cwd', async () => {
     await expect(
-      subProcess.execute('basename', ['$PWD'], { cwd: __dirname }),
+      subProcess.execute('basename $PWD', [], { cwd: __dirname }),
     ).resolves.toEqual('lib\n');
   });
 
