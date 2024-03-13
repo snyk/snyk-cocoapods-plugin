@@ -1,5 +1,5 @@
 import * as childProcess from 'child_process';
-import { quoteAll } from 'shescape';
+import { quoteAll } from 'shescape/stateless';
 
 export function execute(
   command: string,
