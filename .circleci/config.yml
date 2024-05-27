@@ -54,14 +54,11 @@ jobs:
     resource_class: small
     <<: *defaults
     docker:
-      - image: cimg/node:<< parameters.node_version >>
+      - image: circleci/node:<< parameters.node_version >>
     steps:
       - checkout
-      - node-install-packages
-      - run:
-          name: Generate package-lock.json (Required for snyk OS scanning)
-          command: npm install --package-lock
-      - show_node_version
+      - show_node_npm_version
+      - install_deps
       - prodsec/security_scans:
           mode: auto
           release-branch: master
