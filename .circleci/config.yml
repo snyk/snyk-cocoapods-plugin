@@ -68,7 +68,7 @@ jobs:
   lint:
     <<: *defaults
     docker:
-      - image: circleci/node:<< parameters.node_version >>
+      - image: cimg/node:<< parameters.node_version >>
     steps:
       - checkout
       - show_node_npm_version
@@ -80,7 +80,7 @@ jobs:
   test-unix:
     <<: *defaults
     docker:
-      - image: circleci/node:<< parameters.node_version >>
+      - image: cimg/node:<< parameters.node_version >>
     steps:
       - checkout
       - show_node_npm_version
@@ -92,7 +92,7 @@ jobs:
   release:
     <<: *defaults
     docker:
-      - image: circleci/node:<< parameters.node_version >>
+      - image: cimg/node:<< parameters.node_version >>
     resource_class: small
     steps:
       - checkout
@@ -125,7 +125,7 @@ workflows:
       - lint:
           name: lint
           context: nodejs-install
-          node_version: "12"
+          node_version: "18.19.1"
 
       # UNIX tests
       - test-unix:
@@ -135,7 +135,7 @@ workflows:
             - lint
           matrix:
             parameters:
-              node_version: ["16.13.1", "14.18.2", "12.22.7"]
+              node_version: ["18.19.1"]
 
       - release:
           name: Release
