@@ -4,7 +4,7 @@ import { quoteAll } from 'shescape/stateless';
 export function execute(
   command: string,
   args: string[] = [],
-  options?: { cwd?: string }
+  options?: { cwd?: string },
 ): Promise<string> {
   const spawnOptions: {
     shell: boolean;
@@ -14,7 +14,7 @@ export function execute(
     spawnOptions.cwd = options.cwd;
   }
 
-  args = quoteAll(args, spawnOptions);
+  args = quoteAll(args, { flagProtection: false });
 
   return new Promise((resolve, reject) => {
     let stdout = '';
