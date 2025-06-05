@@ -54,7 +54,7 @@ jobs:
     resource_class: small
     <<: *defaults
     docker:
-      - image: circleci/node:<< parameters.node_version >>
+      - image: cimg/node:<< parameters.node_version >>
     steps:
       - checkout
       - show_node_npm_version
@@ -117,7 +117,7 @@ workflows:
 
       - security-scans:
           name: Security Scans
-          node_version: "12"
+          node_version: "20.19.0"
           context:
             - open_source-managed
             - nodejs-install
@@ -125,7 +125,7 @@ workflows:
       - lint:
           name: lint
           context: nodejs-install
-          node_version: "18.19.1"
+          node_version: "20.19.0"
 
       # UNIX tests
       - test-unix:
@@ -135,12 +135,12 @@ workflows:
             - lint
           matrix:
             parameters:
-              node_version: ["18.19.1"]
+              node_version: ["20.19.0"]
 
       - release:
           name: Release
           context: nodejs-lib-release
-          node_version: "lts"
+          node_version: "20.19.0"
           requires:
             - lint
             - test-unix

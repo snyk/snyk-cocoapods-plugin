@@ -41,7 +41,7 @@
   "devDependencies": {
     "@types/graphlib": "^2.1.6",
     "@types/jest": "28.1.1",
-    "@types/node": "^8.10.60",
+    "@types/node": "^20.17.57",
     "@typescript-eslint/eslint-plugin": "^2.33.0",
     "@typescript-eslint/parser": "^2.33.0",
     "eslint": "^6.8.0",
