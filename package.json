@@ -34,7 +34,7 @@
     "@snyk/cli-interface": "^2.11.0",
     "@snyk/cocoapods-lockfile-parser": "3.6.2",
     "@snyk/dep-graph": "^1.23.1",
-    "shescape": "2.1.0",
+    "shescape": "2.1.4",
     "source-map-support": "^0.5.7",
     "tslib": "^2.0.0"
   },
@@ -51,6 +51,6 @@
     "ts-jest": "28.0.8",
     "ts-node": "^8.10.1",
     "tsc-watch": "^2.2.1",
-    "typescript": "4.9.3"
+    "typescript": "5.8.3"
   }
 }
