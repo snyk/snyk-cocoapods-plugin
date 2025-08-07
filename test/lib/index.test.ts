@@ -36,7 +36,7 @@ describe('inspect(rootDir, targetFile?, options?)', () => {
       });
 
       expect(mockedExecute.mock.calls).toEqual([
-        ['bundle exec pod', ['--version'], { cwd: rootDir }],
+        ['bundle', ['exec', 'pod', '--version'], { cwd: rootDir }],
       ]);
     });
 
@@ -54,7 +54,7 @@ describe('inspect(rootDir, targetFile?, options?)', () => {
       });
 
       expect(mockedExecute.mock.calls).toEqual([
-        ['bundle exec pod', ['--version'], { cwd: rootDir }],
+        ['bundle', ['exec', 'pod', '--version'], { cwd: rootDir }],
         ['pod', ['--version'], { cwd: rootDir }],
       ]);
     });
@@ -73,7 +73,7 @@ describe('inspect(rootDir, targetFile?, options?)', () => {
       });
 
       expect(mockedExecute.mock.calls).toEqual([
-        ['bundle exec pod', ['--version'], { cwd: rootDir }],
+        ['bundle', ['exec', 'pod', '--version'], { cwd: rootDir }],
         ['pod', ['--version'], { cwd: rootDir }],
       ]);
     });

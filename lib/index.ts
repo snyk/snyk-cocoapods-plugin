@@ -181,7 +181,7 @@ async function cocoapodsVersion(root: string): Promise<string> {
   let podVersionOutput = '';
   try {
     // 1st: try to run CocoaPods via bundler
-    podVersionOutput = await subProcess.execute('bundle exec pod', ['--version'], {cwd: root});
+    podVersionOutput = await subProcess.execute('bundle', ['exec', 'pod', '--version'], {cwd: root});
   } catch {
     try {
       // 2nd: try to run CocoaPods directly
