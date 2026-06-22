@@ -99,7 +99,9 @@ jobs:
       - install_deps
       - run:
           name: Release
-          command: npx semantic-release
+          command: |
+            export NPM_ID_TOKEN=$(circleci run oidc get --claims '{"aud": "npm:registry.npmjs.org"}')
+            npx semantic-release@25.0.3
 
 workflows:
   version: 2
@@ -117,7 +119,7 @@ workflows:
 
       - security-scans:
           name: Security Scans
-          node_version: "20.19.0"
+          node_version: "24.16.0"
           context:
             - open_source-managed
             - nodejs-install
@@ -125,7 +127,7 @@ workflows:
       - lint:
           name: lint
           context: nodejs-install
-          node_version: "20.19.0"
+          node_version: "24.16.0"
 
       # UNIX tests
       - test-unix:
@@ -135,12 +137,13 @@ workflows:
             - lint
           matrix:
             parameters:
-              node_version: ["20.19.0"]
+              node_version: ["24.16.0"]
 
       - release:
           name: Release
-          context: nodejs-lib-release
-          node_version: "20.19.0"
+          context:
+            - github-release
+          node_version: "24.16.0"
           requires:
             - lint
             - test-unix
