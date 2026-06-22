@@ -142,6 +142,7 @@ workflows:
       - release:
           name: Release
           context:
+            - nodejs-install
             - github-release
           node_version: "24.16.0"
           requires:
