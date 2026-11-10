@@ -120,7 +120,7 @@ workflows:
 
       - security-scans:
           name: Security Scans
-          node_version: "24.16.0"
+          node_version: "22"
           context:
             - engines_sca-scanners
             - nodejs-install
@@ -129,7 +129,7 @@ workflows:
       - lint:
           name: lint
           context: nodejs-install
-          node_version: "24.16.0"
+          node_version: "22"
 
       # UNIX tests
       - test-unix:
@@ -139,14 +139,14 @@ workflows:
             - lint
           matrix:
             parameters:
-              node_version: ["24.16.0"]
+              node_version: ["22", "24", "26"]
 
       - release:
           name: Release
           context:
             - nodejs-install
             - github-release
-          node_version: "24.16.0"
+          node_version: "22"
           requires:
             - lint
             - test-unix
