@@ -36,7 +36,7 @@
     "url": "https://github.com/snyk/snyk-cocoapods-plugin/issues"
   },
   "dependencies": {
-    "@snyk/cli-interface": "^2.11.0",
+    "@snyk/cli-interface": "^2.16.0",
     "@snyk/cocoapods-lockfile-parser": "3.10.3",
     "@snyk/dep-graph": "^1.23.1",
     "shescape": "2.1.14",
