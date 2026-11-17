@@ -1,6 +1,7 @@
 import * as childProcess from 'child_process';
 import { escapeAll, quoteAll } from 'shescape/stateless';
 import * as os from 'node:os';
+import { cleanSnykEnv } from '@snyk/cli-interface';
 
 export function execute(
   command: string,
@@ -10,7 +11,11 @@ export function execute(
   const spawnOptions: {
     shell: boolean;
     cwd?: string;
-  } = { shell: false };
+    env?: { [key: string]: string | undefined };
+  } = {
+    shell: false,
+    env: cleanSnykEnv(process.env, process.env),
+  };
   if (options && options.cwd) {
     spawnOptions.cwd = options.cwd;
   }
